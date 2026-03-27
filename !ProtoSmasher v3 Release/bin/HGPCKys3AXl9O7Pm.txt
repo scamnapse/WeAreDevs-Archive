@@ -1,0 +1,193 @@
+-- Decompiled with the Synapse X Luau decompiler.
+
+client = nil;
+cPcall = nil;
+Pcall = nil;
+Routine = nil;
+service = nil;
+gTable = nil;
+return function(p1)
+	local v1 = service.New("ScreenGui");
+	local l__Mode__2 = p1.Mode;
+	local v3 = client.UI.Register(v1, {
+		Name = "Effect"
+	});
+	local l__BindEvent__4 = v3.BindEvent;
+	client.UI.Remove("Effect", v1);
+	v3:Ready();
+	if l__Mode__2 == "Off" or not l__Mode__2 then
+		v3:Destroy();
+		return;
+	end;
+	if l__Mode__2 == "Pixelize" then
+		local v5 = Instance.new("Frame", v1);
+		local v6 = p1.Resolution and 20;
+		local v7 = p1.Resolution and 20;
+		local u1 = {};
+		local l__CurrentCamera__2 = workspace.CurrentCamera;
+		local u3 = p1.Distance and 80;
+		local function v8()
+			for v9, v10 in pairs(u1) do
+				local v11 = l__CurrentCamera__2:ScreenPointToRay(v10.X, v10.Y, 0);
+				local v12, v13 = workspace:FindPartOnRay(Ray.new(v11.Origin, v11.Direction * u3));
+				if v12 and v12.Transparency < 1 then
+					v10.Pixel.BackgroundColor3 = v12.BrickColor.Color;
+				else
+					v10.Pixel.BackgroundColor3 = Color3.fromRGB(105, 170, 255);
+				end;
+			end;
+		end;
+		v5.Size = UDim2.new(1, 0, 1, 40);
+		v5.Position = UDim2.new(0, 0, 0, -35);
+		for v14 = 0, v1.AbsoluteSize.Y + 50, v6 do
+			for v15 = 0, v1.AbsoluteSize.X + 30, v7 do
+				local v16 = Instance.new("TextLabel");
+				v16.Text = "";
+				v16.BorderSizePixel = 0;
+				v16.Size = UDim2.new(0, v7, 0, v6);
+				v16.Position = UDim2.new(0, v15 - v7 / 2, 0, v14 - v6 / 2);
+				v16.BackgroundColor3 = Color3.fromRGB(105, 170, 255);
+				v16.Parent = v5;
+				table.insert(u1, {
+					Pixel = v16, 
+					X = v15, 
+					Y = v14
+				});
+			end;
+		end;
+		while wait() and not v3.Destroyed and v1.Parent do
+			if not v3.Destroyed and not v3.Active then
+				wait(5);
+			else
+				v8();
+			end;		
+		end;
+		v3:Destroy();
+		return;
+	end;
+	if l__Mode__2 == "FadeOut" then
+		service.StarterGui:SetCore("TopbarEnabled", false);
+		service.UserInputService.MouseIconEnabled = false;
+		for v17, v18 in pairs(service.PlayerGui:GetChildren()) do
+			pcall(function()
+				if v18 ~= v1 then
+					v18:Destroy();
+				end;
+			end);
+		end;
+		local v19 = Instance.new("Frame", v1);
+		v19.BackgroundTransparency = 1;
+		v19.BackgroundColor3 = Color3.new(0, 0, 0);
+		v19.Size = UDim2.new(2, 0, 2, 0);
+		v19.Position = UDim2.new(-0.5, 0, -0.5, 0);
+		for v20 = 1, 0, -0.01 do
+			v19.BackgroundTransparency = v20;
+			wait(0.1);
+		end;
+		v19.BackgroundTransparency = 0;
+		client.Functions.BrickBlur(true, 0, BrickColor.new("Really black"));
+		return;
+	end;
+	if l__Mode__2 == "Trippy" then
+		local l__Player__21 = service.Player;
+		local v22 = Instance.new("Frame", v1);
+		v22.BackgroundColor3 = Color3.new(0, 0, 0);
+		v22.BackgroundTransparency = 0;
+		v22.Size = UDim2.new(10, 0, 10, 0);
+		v22.Position = UDim2.new(-5, 0, -5, 0);
+		v22.ZIndex = 10;
+		while v1 and v1.Parent do
+			wait(0.022727272727272728);
+			v22.BackgroundColor3 = Color3.new(math.random(255) / 255, math.random(255) / 255, math.random(255) / 255);		
+		end;
+		if v1 then
+			v1:Destroy();
+			return;
+		end;
+	else
+		if l__Mode__2 == "Spooky" then
+			local v23 = Instance.new("Frame", v1);
+			v23.BackgroundColor3 = Color3.new(0, 0, 0);
+			v23.Size = UDim2.new(1, 0, 1, 50);
+			v23.Position = UDim2.new(0, 0, 0, -50);
+			local v24 = Instance.new("ImageLabel", v23);
+			v24.Position = UDim2.new(0, 0, 0, 0);
+			v24.Size = UDim2.new(1, 0, 1, 0);
+			v24.BorderSizePixel = 0;
+			v24.BackgroundColor3 = Color3.new(0, 0, 0);
+			local v25 = { 299735022, 299735054, 299735082, 299735103, 299735133, 299735156, 299735177, 299735198, 299735219, 299735245, 299735269, 299735289, 299735304, 299735320, 299735332, 299735361, 299735379 };
+			local v26 = Instance.new("Sound", v1);
+			v26.SoundId = "rbxassetid://174270407";
+			v26.Looped = true;
+			v26:Play();
+			while v1 and v1.Parent do
+				for v27 = 1, #v25 do
+					v24.Image = "rbxassetid://" .. v25[v27];
+					wait(0.1);
+				end;			
+			end;
+			v26:Stop();
+			return;
+		end;
+		if l__Mode__2 == "lifeoftheparty" then
+			local v28 = Instance.new("Frame", v1);
+			v28.BackgroundColor3 = Color3.new(0, 0, 0);
+			v28.Size = UDim2.new(1, 0, 1, 50);
+			v28.Position = UDim2.new(0, 0, 0, -50);
+			local v29 = Instance.new("ImageLabel", v28);
+			v29.Position = UDim2.new(0, 0, 0, 0);
+			v29.Size = UDim2.new(1, 0, 1, 0);
+			v29.BorderSizePixel = 0;
+			v29.BackgroundColor3 = Color3.new(0, 0, 0);
+			local v30 = { 299733203, 299733248, 299733284, 299733309, 299733355, 299733386, 299733404, 299733425, 299733472, 299733489, 299733501, 299733523, 299733544, 299733551, 299733564, 299733570, 299733581, 299733597, 299733609, 299733621, 299733632, 299733640, 299733648, 299733663, 299733674, 299733694 };
+			local v31 = Instance.new("Sound", v1);
+			v31.SoundId = "rbxassetid://172906410";
+			v31.Looped = true;
+			v31:Play();
+			while v1 and v1.Parent do
+				for v32 = 1, #v30 do
+					v29.Image = "rbxassetid://" .. v30[v32];
+					wait(0.1);
+				end;			
+			end;
+			v31:Stop();
+			return;
+		elseif l__Mode__2 == "Strobe" then
+			local v33 = Instance.new("Frame", v1);
+			v33.BackgroundColor3 = Color3.new(0, 0, 0);
+			v33.BackgroundTransparency = 0;
+			v33.Size = UDim2.new(10, 0, 10, 0);
+			v33.Position = UDim2.new(-5, 0, -5, 0);
+			v33.ZIndex = 10;
+			while v1 and v1.Parent do
+				wait(0.022727272727272728);
+				v33.BackgroundColor3 = Color3.new(1, 1, 1);
+				wait(0.022727272727272728);
+				v33.BackgroundColor3 = Color3.new(0, 0, 0);			
+			end;
+			if v1 then
+				v1:Destroy();
+				return;
+			end;
+		else
+			if l__Mode__2 == "Blind" then
+				local v34 = Instance.new("Frame", v1);
+				v34.BackgroundColor3 = Color3.new(0, 0, 0);
+				v34.BackgroundTransparency = 0;
+				v34.Size = UDim2.new(10, 0, 10, 0);
+				v34.Position = UDim2.new(-5, 0, -5, 0);
+				v34.ZIndex = 10;
+				return;
+			end;
+			if l__Mode__2 == "ScreenImage" then
+				local v35 = Instance.new("ImageLabel", v1);
+				v35.Image = "rbxassetid://" .. p1.Image;
+				v35.BackgroundColor3 = Color3.new(0, 0, 0);
+				v35.BackgroundTransparency = 0;
+				v35.Size = UDim2.new(1, 0, 1, 0);
+				v35.Position = UDim2.new(0, 0, 0, 0);
+				v35.ZIndex = 10;
+			end;
+		end;
+	end;
+end;

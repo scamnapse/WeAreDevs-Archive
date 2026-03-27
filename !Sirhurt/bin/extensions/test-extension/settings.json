@@ -1,0 +1,16 @@
+{
+    "version": "1.0.0",
+    "name": "test extension",
+    "creator": "0x59",
+    "configurations": {
+        "entry": {
+            "entry_name": "main",
+            "entry_nargs": 0,
+            "entry_args": {},
+            "return_value": "null"
+        },
+        "file": "{$sirhurt_extension}\\extension.lua",
+        "workspace": "{$sirhurt_extension}",
+        "modules": []
+    }
+}

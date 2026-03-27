@@ -1,0 +1,1417 @@
+- 1/20/2021 v3.2.4n
+	- Update for roblox update
+
+- 1/13/2021 v3.2.4m
+	- Update for roblox update
+
+- 1/11/2021 v3.2.4l
+	- Freeing mouse stuff no longer uses ScreenGui's (therefore no longer detectable)
+
+- 1/7/2021 v3.2.4k
+	- Update for roblox update
+	- I'm starting to focus more on Sentinel v3 than ProtoSmasher, therefore there won't be that many (if any at all) feature updates anymore. Just updates and bug fixes.
+
+- 12/18/2020 v3.2.4j
+	- Update for roblox update
+	- It's probably going to crash quite a bit, I am still yet unable to figure out why.
+
+- 12/4/2020 v3.2.4i
+	- Update for roblox update
+	- Fixed crash on set_thread_context
+	- Security improvements
+
+- 11/20/2020 v3.2.4h patch 5
+	- Fixed fire_click_detector
+
+- 11/20/2020 v3.2.4h patch 4
+	- Actually fixed fake_touch
+
+- 11/20/2020 v3.2.4h patch 3
+	- Fixed explorer highlight crash
+	- Fixed issue with part transparency
+
+- 11/20/2020 v3.2.4h patch 2
+	- Seemed to have fixed freeze/crash with certain scripts (please test)
+	- Fixed fake_touch
+
+- 11/18/2020 v3.2.4h patch 1
+	- Fixed specific crash
+	- Drawing3d is broke this update, will fix it later.
+
+- 11/18/2020 v3.2.4h
+	- Update for roblox update
+
+- 11/11/2020 v3.2.4g patch 1
+	- Update for roblox update (AGAIN, i literally got taco bell and then came back to see they updated again)
+
+- 11/11/2020 v3.2.4g
+	- Update for roblox update
+
+- 11/6/2020 v3.2.4f
+	- Update for roblox update
+	- Sorry for the delay on this one, been hyperfocusing on another project of mine.
+
+- 10/28/2020 v3.2.4e
+	- Update for roblox update
+	- Fixed crash when having explorer open during teleports with instances selected
+
+- 10/17/2020 v3.2.4d
+	- Update for roblox update
+	- Sorry for the long update time on this one, there was a weird issue that popped up which took me awhile to debug.
+
+- 10/8/2020 v3.2.4c
+	- Update for roblox update
+
+- 9/30/2020 v3.2.4b
+	- Update for roblox update
+
+- 9/24/2020 v3.2.4a
+	- Update for roblox update
+
+- 9/18/2020 v3.2.4
+	- Update for roblox update
+	- I have put out a statement of which you can read here: https://i.protosma.sh/i/WPlMe96knffekGuQ.png
+
+- 9/13/2020 v3.2.3z
+	- Removed auto-join feature (there is no discord anymore)
+	- Removed chat (didn't work)
+	- ProtoSmasher now only logs your ip on injection and thats it
+
+- 9/10/2020 v3.2.3y
+	- Update for roblox update
+
+- 8/27/2020 v3.2.3x
+	- Update for roblox update (i definitely did not spill gravy on myself while updating)
+
+- 8/26/2020 v3.2.3w
+	- Update for roblox update (i get a pass for being slow cause its my birthday smh!!!!!)
+	- Update pinned output to match the output tab
+	- Fixed pin output option not saving
+
+- 8/19/2020 v3.2.3v
+	- Update for roblox update (i did it fast this week :3)
+
+- 8/15/2020 v3.2.3u
+	- Update for roblox update
+	- Big Ol' Fat Delay cause I was busy irl sorry (involved traveling to another state)
+
+- 7/30/2020 v3.2.3t
+	- Update for roblox update
+
+- 7/30/2020 v3.2.3s
+	- Update for roblox update (no reason for delay I was just busy at first and then procrastination lol)
+
+- 7/25/2020 v3.2.3r
+	- Released spoofing feature (proto has had this secretly for months but i smell that its end is near so I'm release it to more than just my friends.) (pic: https://i.protosma.sh/i/NbC4ttic5bIpGxMH.png)
+
+- 7/24/2020 v3.2.3q patch 4
+	- Fix set_simulation_radius
+	- Fix context error with set_hidden_prop
+
+- 7/23/2020 v3.2.3q patch 3
+	- Fixed pf/bad business features not working
+	- Fixed crash with AttachedBox in Drawing3d
+
+- 7/22/2020 v3.2.3q patch 2
+	- Fix crashes (for real this time, i tested it works for me D:)
+
+- 7/22/2020 v3.2.3q patch 1
+	- Fix crashes (i really am starting to hate msvc)
+
+- 7/22/2020 v3.2.3q
+	- Update for roblox update
+
+- 7/15/2020 v3.2.3p
+	- Update for roblox update (this took way longer than it should have, thanks msvc.)
+	- Fixed crash when clone_closure was called with a lua function
+
+- 7/9/2020 v3.2.3o patch 1
+	- Fix for various debug function crashes
+	- Fixed bug with pf/bad business handlers (for esp, etc.)
+
+- 7/8/2020 v3.2.3o
+	- Update for roblox release
+	- Fixed Aimbot & Triggerbot
+	- Made some improvements to the aiming selection algorithm for the aimbot
+	- Added skeleton esp
+	- Added support for phantom forces (esp, chams, etc.)
+	- Made some improvements to how I handle things for bad business
+	- Added some more protections for pebc scripts
+	- Fixed bug with Drawing3d gc handler
+	- Fixed fire_click_detector
+	- Added part/model selection highlight to explorer
+	- Both options are enabled by default for the explorer (resize & highlight)
+	- Fixed 2 bugs with ask_prompt
+
+- 6/25/2020 v3.2.3n
+	- Fixed some issues that were causing a crash
+	- Added clone_closure to the documentation, and also added a new parameter to it. It's existed for awhile now, but seems I forgot to document it.
+
+- 6/24/2020 v3.2.3m patch 3
+	- I am dumb. That is all.
+
+- 6/24/2020 v3.2.3m patch 2
+	- Reverted something with whitelists that wasn't suppose to be released yet
+
+- 6/24/2020 v3.2.3m patch 1
+	- Fix for debug upvalues functions
+
+- 6/24/2020 v3.2.3m
+	- Update for roblox update
+
+- 6/18/2020 v3.2.3l patch 1
+	- Fix crashing issue due to build server messing up
+
+- 6/18/2020 v3.2.3l
+	- Added set_hidden_prop (Check docs for more info)
+	- Copy path in explorer will now use LocalPlayer instead of your accounts name
+	- Fixed setting some properties breaking the ui in explorer
+
+- 6/17/2020 v3.2.3k
+	- Update for roblox update
+	- Took a little longer due to some changes with debug info in protos
+	- Fixed websocket/drawing/drawing3d objects not being garbage collected (they will disappear on teleport now)
+
+- 6/10/2020 v3.2.3j patch 2
+	- Fixed another bug that caused crashes
+
+- 6/10/2020 v3.2.3j patch 1
+	- Fixed a bug that caused a crash with specific functions
+
+- 6/10/2020 v3.2.3j
+	- Update for roblox update
+	- Added new option 'FollowLocation' to http_request function (Check docs for more info)
+
+- 6/9/2020 v3.2.3i
+	- Fixed a bug that was causing a crash (not 100% sure on this but seems to be better from testing)
+	- Added some more alias' to the environment for functions (functions inside "syn" table)
+	- Made PEBC a tiny bit more secure
+
+- 6/9/2020 v3.2.3h patch 1
+	- Disable console (oops)
+
+- 6/9/2020 v3.2.3h
+	- Removed support for directx 9 (this is experimental as I'm not sure how many people actually use this, could be reverted in a later update)
+
+- 6/5/2020 v3.2.3g
+	- Added support for compound operators in lua (+=, -=, etc..)
+
+- 6/3/2020 v3.2.3f
+	- Fixed is_network_owner
+	- Added set_simulation_radius (Check docs for more info, this has actually existed in proto for some time but it wasn't documented)
+
+- 6/3/2020 v3.2.3e
+	- Update for roblox update
+
+- 5/31/2020 v3.2.3d
+	- Fix for debug.getinfo
+	- Fix for anti-afk (shouldn't break anymore like at all)
+
+- 5/27/2020 v3.2.3c
+	- Update for roblox update
+
+- 5/20/2020 v3.2.3b
+	- Update for roblox update
+	- Resize option on explorer is currently broke, I will be fixing it soon.
+
+- 5/13/2020 v3.2.3a
+	- Update for roblox update
+	- Added new options to ESP (only show info, and selecting what info you want shown)
+
+- 5/6/2020 v3.2.3
+	- Update for roblox update
+	- Fixed bug with debug.setupvalue
+	- Fixed explorer icons being colored with themes
+	- Revamped explorer properties panel
+	- Added option to resize roblox based on the width of the explorer (no more pesky explorer covering up the game)
+	- Fixed get_loaded_modules and loaded modules in script viewer
+	- Fixed output redirection crash
+	- Added 'Execute File' button to execution tab
+	- Open/Execute File now default to .lua files instead of .txt
+
+- 4/29/2020 v3.2.2x
+	- Update for roblox update
+	- Fixed an issue with UI Passthrough (no more weirdness with explorer and stuff)
+	- Fixed Radar
+	- Fixed Asus Walls
+	- Added option to change explorer width and moved explorer options to its own separate section
+
+- 4/26/2020 v3.2.2w
+	- Fixed an issue (fixes things like get_namecall_method, etc.)
+	- Added "Copy Path" to context menu of search results in the explorer.
+
+- 4/23/2020 v3.2.2v patch 2
+	- Fixed crash issue
+
+- 4/23/2020 v3.2.2v patch 1
+	- Fixed console window appearing
+
+- 4/23/2020 v3.2.2v
+	- Fixed another issue
+
+- 4/22/2020 v3.2.2u
+	- Fixed some issues
+
+- 4/22/2020 v3.2.2t
+	- Update for roblox update
+
+- 4/21/2020 v3.2.2s
+	- Renamed click_detector to fire_click_detector (that has been bugging me for awhile)
+	- Added a third parameter to fire_click_detector to specify right clicks (Check docs for more info)
+	- Fixed fake_touch
+	- Split the "Teleport To" option in explorer into 2 different modes depending on what method they use to teleport the player (MoveTo & SetPrimaryPartCFrame)
+
+- 4/19/2020 v3.2.2r
+	- Fixed vulnerability with some code
+
+- 4/16/2020 v3.2.2q
+	- Supercharged saveinstance, save even bigger places now with ease!
+	- Fixed debug.getinfo crash
+	- Added list_directory (Check docs for more info)
+
+- 4/15/2020 v3.2.2p
+	- Update for roblox update
+	- Fixed issue with detoured functions not being invoked via pcall & etc.
+	- Fixed issue with teleports not working
+
+- 4/8/2020 v3.2.2o
+	- Update for roblox update
+	- Fixed teleport crashing everytime
+	- Fixed another issue with namecall
+
+- 4/3/2020 v3.2.2n patch 2
+	- Fixed issues with yielding in pebc
+	- Fixed namecall yields not respecting pcall
+
+- 4/1/2020 v3.2.2n patch 1
+	- Fixed detour_function
+
+- 4/1/2020 v3.2.2n
+	- Update for roblox update
+	- We've talked with the government and were able to get our domain back. April fools :-)
+
+- 3/31/2020 v3.2.2m
+	- Fixed debug.getinfo
+	- Added some undocumented functions for a script (maybe ill document them later idk)
+
+- 3/25/2020 v3.2.2l
+	- Update for roblox update
+	- Fixed bug with transparency stuff (related to asus walls)
+
+- 3/18/2020 v3.2.2k
+	- Update for roblox update
+
+- 3/14/2020 v3.2.2j patch 1
+	- Fixed debug.getinfo & debug.setupvalue
+
+- 3/12/2020 v3.2.2j
+	- Update for roblox update
+	- Fixed debug.getupvalue(s)
+
+- 3/7/2020 v3.2.2i patch 1
+	- Fixed teleports crashing 100% of the time
+
+- 3/6/2020 v3.2.2i
+	- Fixed shutdown when calling debug.getinfo with a function
+	- Fixed bug with namecall
+
+- 3/5/2020 v3.2.2h
+	- Update for roblox update
+
+- 2/26/2020 v3.2.2g
+	- Update for roblox update
+	- Experimental patch for detection method (not so sure on this one, it patches the detection but it might still be detectable)
+
+- 2/19/2020 v3.2.2f patch 1
+	- Fixed Output Redirection crashing with errors
+	- Roblox process should no longer hang while closing (not entirely sure if this worked yet)
+
+- 2/19/2020 v3.2.2f
+	- Update for roblox update
+	- Added Output Redirection (ScriptContext.Error will not be fired for proto scripts & print/warn will be outputted into the ProtoSmasher output)
+
+- 2/13/2020 v3.2.2e patch 1
+	- Fixed is_protosmasher_caller & related things (had changed some stuff internally last update, but made an oversight. all is well now)
+
+- 2/12/2020 v3.2.2e
+	- Update for roblox update
+	- Added set_thread_context & debug.getinfo (Check docs for more info)
+
+- 2/5/2020 v3.2.2d
+	- Update for roblox update
+	- Added 'continue' keyword since it appears ROBLOX is adding it
+	- Added a system to make handling custom characters easier for esp, chams, radar, etc.. (radar will now work on bad business)
+
+- 1/29/2020 v3.2.2c
+	- Update for roblox update
+
+- 1/23/2020 v3.2.2b
+	- Update for roblox update
+	- Added a radar! If you want any more customization options, suggest them on the trello.
+	- More stability fixes
+	- Revamp for the scripts tab, also added a new section for scripts that you've created on the hub.
+	- Disabled GuiService::OpenBrowserWindow due to potential for abuse
+	- Added new parameter to the launcher "-skipupdate" (should be self explanatory)
+
+- 1/18/2020 v3.2.2a
+	- Various stability fixes
+
+- 1/15/2020 v3.2.2
+	- Update for roblox update
+	- Fixed chams and Drawing3d
+	- Injector will now check for and download any available updates
+	- Calling functions not created by ProtoSmasher will no longer have elevated permissions. (Example at https://i.protosma.sh/uploads/fKbXqVKpL5.png)
+
+- 1/11/2020 v3.2.1z
+	- Fixed something
+	- Fixed require
+
+- 1/8/2020 v3.2.1y
+	- Update for roblox update
+	- Removed compatibility mode.  Alias' now exist in the environment for most functions. If you think I've missed any suggest them on the trello!
+	- Fixed certain functions not existing inside the pebc environment
+
+- 12/31/2019 v3.2.1x
+	- Happy new year! 2019 was a great year for ProtoSmasher. Thank you for supporting us on our journey!
+	- Fixed Aimbot
+	- Fixed Triggerbot
+	- Added UI Passthrough option
+	- Added built in remotespy (currently a WIP but should work!)
+	- Made some changes to the chunknames for PEBC
+	- Updated the text editor (should fix some bugs hopefully)
+	- Updated the definitions for the text editor
+	- Added documentation for the Input library (my bad!)
+	- Fixed the updater in the app!
+
+- 12/18/2019 v3.2.1w
+	- Fixed a bug with script execution
+	- Added "Teleport To" option for parts in the explorer
+
+- 12/17/2019 v3.2.1v
+	- Update for roblox update
+	- Tabs at the top will no longer move when scrolled in settings tab (I will fix it for the scripts tab eventually)
+	- Added support for LuaU fastcall mechanism (calling math.floor directly instead of localizing it is now faster)
+	- Add "Jump to Object" for explorer search results
+	- Execution should be faster now
+
+- 12/11/2019 v3.2.1u
+	- Update for roblox update
+	- Some progress on the workspace search in the explorer
+	- Fixed bug with Asus Walls
+	- Added save button to execution tab
+
+- 12/5/2019 v3.2.1t
+	- Update for roblox update
+	- Fixed obsecure edge case in LuaU which would cause a crash
+	- Added better support for large scripts (ex: obfuscated scripts) (not sure if this works 100% but based on testing it should work fine)
+	- Fixed Window library not existing in PEBC scripts
+	- Fixed scripts tab execution
+
+- 11/23/2019 v3.2.1s
+	- Fixed esp crash
+	- Fixed some other bugs
+
+- 11/23/2019 v3.2.1r
+	- Update for roblox update
+	- Added asus walls feature (experimental for now)
+	- WHEW! That took much longer than it needed to. Sorry about that! (Short explanation is that roblox changed some compiler settings and alot of my stuff broke)
+	- Some things might be unstable as I wanted to get this update out asap which didn't leave me any time to test everything
+
+- 11/14/2019 v3.2.1q
+	- Update for roblox update
+	- Added Drawing3d Library (Check docs for more info)
+	- Sorry for the long update! Lots of things changed this update.
+
+- 11/8/2019 v3.2.1p
+	- Fixed stutter issue
+
+- 11/7/2019 v3.2.1o
+	- Fixed a bug with LuaU execution
+	- Added multiple improvements to LuaU
+	- Namecall will now be respected by ProtoSmasher, so make sure scripts are written accordingly!
+	- New documentation style, hope you like it!
+	- Removed all functions from the documentation that were broken by the new vm
+	- Should have finally removed dependency on DirectX9 (no more needing to install it!)
+
+- 10/30/2019 v3.2.1m patch 1
+	- Fixed HttpGet/HttpPost etc., and http_request
+
+- 10/30/2019 v3.2.1m
+	- Update for roblox update
+	- Made some improvements to LuaU execution
+	- All (almost) options now save
+	- Added option to disable watermark
+
+- 10/24/2019 v3.2.1l
+	- Update for roblox update
+
+- 10/17/2019 v3.2.1k
+	- Update for roblox update
+	- Fixed a bug with execution
+
+- 10/10/2019 v3.2.1j
+	- Update for roblox update
+	- Made some changes to detour_function, should be really stable now! (size also doesnt matter now aswell, so the last parameter was removed)
+	- getscriptenvs, getsenv, and getmenv along with the running scripts dropdown in the script viewer will be broken for the time being (i will fix them tomorrow most likely)
+
+- 10/7/2019 v3.2.1i
+	- Fixed some stuff related to the autojoiner
+
+- 10/4/2019 v3.2.1h
+	- Fixed a crash
+	- Added queue_for_teleport and clear_teleport_queue (Check docs for more info)
+
+- 10/4/2019 v3.2.1g
+	- Update for roblox update
+	- This is a day late, I had a wrong offset and didn't realize it for awhile (im stupid i know)
+	- Added the Window library (not fully documented yet, wanted to get this update out asap sorry!)
+	- Added ask_prompt
+
+- 9/28/2019 v3.2.1f
+	- saveinstance is finally fixed! please report any issues with it : )
+
+- 9/27/2019 v3.2.1e
+	- Fix for some functions that caused a crash
+
+- 9/26/2019 v3.2.1d
+	- Update for roblox update
+	- Closures returned by protect_function no longer have upvalues. (results in smaller size for use in detour_function)
+	- Changed how detour_function works (this will break some scripts, but i think what ive changed it to is better than what i was doing before)
+	- Added get_hidden_prop and http_request (Check docs for more info)
+
+- 9/14/2019 v3.2.1c
+	- Fixed get_loaded_modules and fake_touch
+
+- 9/13/2019 v3.2.1b
+	- Updated for roblox update
+	- Renamed "Square" to "Rectangle" in Drawing library. (To not break old scripts, Drawing.new("Square") will still work)
+	- Added Status property to WebSocket objects
+
+- 9/5/2019 v3.2.1a
+	- Update for roblox update
+	- Updated app (fixed another bug)
+
+- 9/2/2019 v3.2.1
+	- Added support for LuaU vm!
+	- Added ESP/Aimbot/Triggerbot/Chams support for "Bad Business" (placeid 3233893879)
+	- Fixed TriggerBot
+	- Aimbot key will now save when changed
+	- Added is_luau and get_namecall_method
+	- Added extra theme options into the themes tab (you can change the colors of tabs now)
+	- Updated debug.getupvalues/getupvalue/setupvalue to work on LuaU (setlocal/getlocals/getlocal will not exist on luau)
+	- Shoutout to austin for being an epic gamer
+	- Version is now listed in the file description
+	- Updated injector, invoking it with "-hide" will now hide the console window. If hidden mode is activated, it will not wait for roblox to be opened (this is to prevent processes from being left open)
+	- Updated app (fixed some bugs)
+	- In-game chat is no longer enabled by default.
+
+- 8/22/2019 v3.2.0k
+	- Update for roblox update
+
+- 8/18/2019 v3.2.0j
+	- Fixed some bugs
+
+- 8/17/2019 v3.2.0i
+	- Update for roblox update
+	- Sorry for the late update! Google updated our database and subsequently broke it completely which took down our website and just about everything else : (
+
+- 8/8/2019 v3.2.0h
+	- Update for roblox update
+	- Fixed bug with explorer
+	- Progress with Luau vm is going well, still not ETA on completion yet.
+
+- 7/31/2019 v3.2.0j
+	- Update for roblox update
+	- I've begun working on adding execution for the Luau vm. No eta on completion yet.
+
+- 7/25/2019 v3.2.0i
+	- Update for roblox update
+	- Fixed setfflag
+
+- 7/17/2019 v3.2.0h
+	- Update for roblox update
+	- Fixed more kicking issues
+	- Added proto_execute (Already existed, but now is documented.)
+	- Fixed chams
+
+- 7/13/2019 v3.2.0g
+	- Fixed kicking issue
+	- Fixed way of bypassing my blocks on certain function that could be used to do malicious things
+	- Added fake_touch
+	- Added load_instances_from_xml
+	- Fixed get_signal_cons and disconnect_all
+	- Added documentation for the WebSocket library (includes example code)
+
+- 7/10/2019 v3.2.0f
+	- Update for roblox update
+	- Fixed trigger bot
+
+- 7/8/2019 v3.2.0e
+	- Fixed some bugs with an internal thing that would cause crashes in certain features (decompiling functions, etc.)
+	- Improved the mouse aimbot loads (its actually accurate now)
+	- Fixed drawing api
+	- Added trigger bot
+
+- 6/26/2019 v3.2.0d
+	- Update for roblox update
+	- Added websocket api for external ui's (not documented yet)
+	- Added clear output button to output tab
+	- Added look mode to aimbot (aim by player distance or nearest to cursor)
+
+- 6/20/2019 v3.2.0c
+	- Update for roblox update
+	- Mouse mode in aimbot works now but isn't particularly accurate 
+	- Added transparency to chams
+	- Made changes to window hooks when ui is open.
+
+- 6/12/2019 v3.2.0b
+	- Update for roblox update
+	- Added quick scripts tab
+	- Added Chams
+	- Added Aimbot (unfinished)
+	- Added extra information to ESP (health, distance)
+	- Added look vector to 3d esp (line that comes out of their head to show where they're looking)
+	- Added health bar to 2d esp
+	- Added new hotkey editor (can be found in settings tab, this is not compatible with the old hotkey settings)
+	- Fixed auto scroll for chat
+	- Internal improvements to ESP
+	- Updated signature of debug.getconstants (can now take a level)
+
+- 6/5/2019 v3.2.0a
+	- Fixed script viewer/view script in explorer
+	
+- 6/5/2019 v3.2.0
+	- Update for roblox update
+	- Completely redesigned the UI, no more windows all over the place.
+	- Added option to hide the text information in the ESP
+	- Updated the explorer icons to match latest studio version
+	- I realized I didn't add a quick scripts replacement for this new UI, I'll do that by next update hopefully. My bad!
+	- New color scheme
+	- Changed how the easter egg activates.
+	- You open the explorer by going to settings and checking "Explorer Open", I wasn't really sure how to put it in the new ui. This may change in the future.
+	- Added a trial mode
+
+- 5/30/2019 v3.1.2z patch 1
+	- Fixed init script not being loaded
+	- Fixed Copy Path in the explorer
+	- Improved the 2D ESP
+	- Added Rainbow Color option for ESP
+
+- 5/30/2019 v3.1.2z
+	- Update for roblox update
+	- Fixed bug with PEBC scripts causing crashes
+	- Disabled Delete option in explorer, broken for now.
+	- Added an easter egg :-) (can be disabled in settings)
+
+- 5/16/2019 v3.1.2y
+	- Update for roblox update
+	- Updated ImGui
+	- Updated editor
+	- Updated editor definitions
+
+- 5/9/2019 v3.1.2x patch 1
+	- Update for roblox update
+
+- 5/9/2019 v3.1.2x
+	- Update for roblox update
+	- Fixed an issue with Authentication, should also fix some of the "External component has thrown an exception" things in the whitelister. 
+
+- 5/4/2019 v3.1.2w
+	- Fixed ProtoSmasher for older versions of Windows
+	- Fixed detour_function
+
+- 5/1/2019 v3.1.2v
+	- Update for roblox update
+	- Added compare_c_functions (Check docs for more info)
+	- Added an option to disable the ingame chat
+	- Added appendfile (Check docs for more info)	
+	- Improved teleporting some. I don't expect it to be fully stable yet, but it should atleast be better. (s/o to defcon42)
+
+- 4/25/2019 v3.1.2u
+	- Update for roblox update
+	- Added is_l_closure (Check docs for more info)
+	- Added a ingame chat! (In the roblox chat, not in the ProtoSmasher UI, although they work on the same chat system.)
+	- Fixed a bug with the user list in the chat
+	- Fixed that pesky "Invalid token detected.." message always showing up even though it should only show up once.
+	- Fixed a bug with scripts messing up after calling certain custom ProtoSmasher functions that yield
+
+- 4/17/2019 v3.1.2t
+	- Update for roblox update
+	- Added click_detector (Clicks ClickDetectors for you, Thanks to Defcon42) (Check docs for more info)
+	- Fixed a crashing bug with get_loaded_modules
+	- Fixed a crashing bug with the Loaded Modules Script Viewer list (same bug as with get_loaded_modules)
+	- Added a bunch of exception handling to the Script Viewer list in an attempt to make it more stable in games that spam scripts. (dunno if it works or not sry)
+
+- 4/10/2019 v3.1.2s
+	- Update for roblox update
+	- Removed TestService reimpl (been broken for months, dont feel like fixing it)
+
+- 4/6/2019 v3.1.2r
+	- Update for roblox update
+	- Added property ScaleFactor to Image drawing object (Check docs for more info)
+	- Fixed Anti-AFK
+	- Fixed get_hidden_gui crashing after teleport
+	- Fixed OBS Hide
+
+- 3/27/2019 v3.1.2q
+	- Update for roblox update
+	- The mouse will no longer be stuck when you open the UI. (eg in Phantom Forces or any other game that uses first person)
+	- Teleporting is still broke (least for me), will probably end up remaking how teleporting is handled in general.
+
+- 3/22/2019 v3.1.2p
+	- Update for roblox update
+	- Reloading on teleport is completely broke for some reason, nor do I currently have the time available to debug and fix it. Sorry!
+
+- 3/14/2019 v3.1.2o
+	- Update for roblox update
+	- Fixed saveinstance after it broke this update
+
+- 3/7/2019 v3.1.2n
+	- Update for roblox update
+	- Fixed trust check bypass after it broke this update
+	- Removed the need for the D3DCompiler dll
+
+- 3/2/2019 v3.1.2m
+	- Fixed a bug with decompile function
+	- Fixed crashing bug with drawing api
+
+- 2/27/2019 v3.1.2l
+	- Update for roblox update
+	- Added debug.upvalueid, debug.upvaluejoin and debug.upvaluename (Check docs for more info)
+	- Updated unluac to fix some issues
+	- Fixed a crash bug with get_script_function and get_script_bytecode
+
+- 2/24/2019 v3.1.2k
+	- Fixed an issue with custom index function
+
+- 2/22/2019 v3.1.2j
+	- Fixed an issue that would cause things to go wrong in the init script (would result in things like GetObjects and HttpGet not existing)
+
+- 2/22/2019 v3.1.2i
+	- Fixed an issue that could have been causing ProtoSmasher to be slow at executing scripts on lower end hardware
+	- Fixed an issue that would cause seemingly random errors with upvalues
+
+- 2/20/2019 v3.1.2h
+	- Update for roblox update
+
+- 2/14/2019 v3.1.2g
+	- Update for roblox update
+	- Major overhaul to the explorer
+	- Added property editing to the explorer (pretty limited at this stage, double click a property to edit it)
+	- Locked the explorer to the right side of the screen, and added a minimize button on the toolbar. (it looks better this way imo, i could add an option to make it a window though)
+	- Fixed a crash when attempting to inject ProtoSmasher when its not updated
+	- Added "duration counter" to the scanning, authenticating, and loading messages in the output. (not sure exactly what you would call it lmao)
+
+- 2/6/2019 v3.1.2f
+	- Update for roblox update
+	- Added Hash Library (Check docs for more info)
+	- Added a "Copy to Clipboard" button in the decompilation result window
+	- Updated CryptoPP
+	- Updated the compatibility script
+	- Updated init script
+
+- 1/30/2019 v3.1.2e
+	- Update for roblox update
+	- Fixed rare edge case crash in the explorer with instance selection
+	- Added function get_gc_objects (Check docs for more info)
+	- Added Script Viewer (Open it via the Windows menu)
+	- Renamed "Script Viewer" window to "Decompilation Result" (Explorer "View Script" option and new Script Viewer)
+
+- 1/25/2019 v3.1.2d
+	- Update for roblox update
+	- Updated unluac (fixed a couple bugs)
+	- Made the script viewer in the explorer async, it will no longer freeze the client until its done.
+	- Script system execution is completed!
+	- Fixed HttpPost not existing
+	- Added my new trustcheck bypass that is 10x better than what I was doing before
+	- Attempted to fix delete randomly crashing in explorer for seemingly no reason (pretty sure I didn't fix it)
+
+- 1/17/2018 v3.1.2c
+	- Update for roblox update
+	- Added function get_hidden_gui, this allows you to make regular guis (like dex) undetectable by things like coregui checks. (Check docs for more info)
+	- Changed how the Discord Auto-Joiner worked, as discord broke how I did it before.
+	- Fixed issues with the Http functions
+	- Updated the compatibility script
+
+- 1/10/2019 v3.1.2b
+	- Update for roblox update
+	- You will need to rewhitelist for this update!
+	- Updated the whitelist algorithm as I disocovered some issues with the last one, sorry!
+	- Added a built in crosshair
+	- Added tracers, a option to automatically hide dead players in the esp, and a 2d esp mode for the built-in esp.
+	- Added option to hide team members in the built-in esp.
+	- Fixed a rare edge-case crash with the esp
+	- Updated the unluac, added additional security measures to prevent stealing (make sure you install x86 java)
+	- Made some changes to bytecode_to_lua, it will no longer return false and an error string on an error.
+	- Made changes to the custom HttpGet function, you no longer need to pass the second argument to get a return value.
+	- The decompiler should no longer bring up console windows
+
+- 12/24/2018 v3.1.2a
+	- Fixed an issue with Windows 7
+
+- 12/23/2018 v3.1.2
+	- You will need to rewhitelist for this update!
+	- Added a built-in undetectable ESP
+	- Added a OBS hide option (access is restricted)
+	- Added an alternate form of saveinstance that allows you to pass an array of instances to be saved into one file. (Game saving!)
+	- Added function get_script_bytecode (Check docs for more info)
+	- Added right clicking of values of properties in the explorer, currently it has copy value and edit value, but edit value has not been implemented yet.
+	- Added search box for properties in the explorer, currently I have no plans to add it for objects due to how the explorer currently works.
+	- Multiple instances can now be selected in the explorer. (Saving options will work with this, View Script will not.) (Hold the Control key and click instances)
+	- Improved the decompiler efficiency and reduced potential edge-case crashes
+	- Updated the app to fix some gramatical errors, a rare case where the updater wouldn't work, and changed a couple of error message to be more helpful.
+	- Updated ImGui
+	- Fixed some crashing with the Save to File option in the explorer (seems to work better in my testing, not 100% sure about this yet though)
+	- Fixed a crash with explorer
+	- Fixed a shutdown with explorer
+	- Fixed getscriptenvs missing from the environment
+	- Fixed blank debug window showing up with view script option in explorer
+	- Fixed instances collasping in the explorer when their name was changed
+
+- 12/16/2018 v3.1.1g
+	- Fixed Drawing Api
+	- Fixed a shutdown issue
+
+- 12/14/2018 v3.1.1f
+	- Added a cancel button to the Save to File popup in the explorer.
+	- detour_function now works with functions that were made using protect_function
+	- Fixed Explorer
+	- Fixed Quick Scripts window
+	- Fixed protect_function
+
+- 12/13/2018 v3.1.1e
+	- Update for roblox update
+	- Reworked how ProtoSmasher initializes
+	- The injector will now wait for roblox to be opened, instead of just closing.
+	- Improved loading times
+	- Improved my index/namecall overrides to be faster with proto scripts.
+	- Window options will now save when changed. (Closing the window from the X button will not save though)
+	- Added some helpful information to the authentication failure message.
+	- Added the ability to change the position to the watermark. (This setting saves aswell)
+	- Added missing type checks to detour_function
+	- Added a new parameter to detour_function called "ignoreSizeChecks" (Check docs for more info)
+	- Made the resulting footprint of protect_function smaller.
+	- View Script window will now respect theme settings.
+	- Made explorer icons more efficient
+	- Fixed FPS unlocker
+	- Fixed crashing when injecting before the roblox window is open
+	- Fixed a crash with an anti-detection measure
+	- Fixed some lag spikes when calling specific functions for the first time in the session
+
+- 12/7/2018 v3.1.1d
+	- Update for roblox update
+
+- 12/4/2018 v3.1.1c
+	- Updated protect_function to work better now. (could be compared to newcclosure in other exploits)
+	- Fixed some internal stuff
+	- Fixed a crash when injecting with 2 or more roblox instances already open
+
+- 12/2/2018 v3.1.1b
+	- Changed the font of the UI (make sure to extract the fonts folder if you're downloading from the website!)
+	- Centered the title of windows in the UI
+	- Disabled collapsing/minimzing feature of windows in the UI for a better overall look
+	- Fixed the explorer
+	- Fixed issues with getting kicked
+	- Fixed Http functions (hopefully for the last time)
+	- Fixed more issues with my namecall stuff in the init script
+
+- 11/29/2018 v3.1.1a
+	- Fixed massive lag issues
+
+- 11/29/2018 v3.1.1
+	- Update for roblox update
+	- Added a global chat for all ProtoSmasher users!
+	- Finished View Script for the Explorer
+	- Added the Copy option when you right click instances in the explorer.
+	- Added an option to save scripts with Save to File in the explorer.
+	- Update the injector to support multiple roblox instances
+	- Fixed a crash when having multiple roblox instances open
+	- Fixed my Http function reimplementations. (Although the way I bypass a check may make things look weird for a split second when you call it.)
+	- Fixed more issues with namecall stuff in init script
+	- Added function parse_url (Check docs for more info)
+	- Fixed some inconsistences in the API documentation.
+	- Re-enabled the enableScriptDecompiling of saveinstance.
+
+- 11/15/2018 v3.1.0e
+	- Fixed some stuff that would cause crashes
+	- Made the HttpGet/HttpPost reimplementations async, aka they will no longer freeze your client.
+
+- 11/15/2018 v3.1.0d
+	- Fixed Drawing api issues
+	- Fixed issue with detour_function
+	- Fixed issues with index/namecall stuff in init script
+
+- 11/15/2018 v3.1.0c
+	- Update for roblox update
+	- Fixed explorer
+	- Fixed enum names in explorer
+	- Fixed some detection measures with detour_function
+	- Fixed console
+	- The save theme button now works!
+	- Added debug.getconstants and debug.setconstant
+	- Added the Triangle and Image class to the Drawing Api, also added ZIndex to all objects. (Check docs for more info)
+	- Note on the Drawing Api Image class, the Loaded variable is an indication that the Provided Uri has been loaded. Images are loaded async. Loading images from the workspace folder will come in a later update.
+
+- 11/8/2018 v3.1.0b
+	- Update for roblox update
+	- Added detour_function, check docs for more details. This function may be prone to crashing, but in my testing I didn't crash at all, so at this point in time I am unsure.
+	- Additional performance fixes
+	- Note: HttpGet and HttpPost were changed by roblox and broke my trust check bypass. I have imeplemted some temporary functions for now (they won't fully act the same as roblox's nor are they async)
+
+- 11/4/2018 v3.1.0a
+	- FPS unlocker should be fixed
+	- Hopefully fixed the crashing issues
+
+- 10/31/2018 v3.1.0
+	- Update for roblox update
+	- Sp00ky! Happy halloween ;)
+	- Added in a menu bar that allows you to toggle the visibilty of windows. (Clicking the X on windows will also now close that window instead of closing the gui)
+	- Added a built in explorer, currently you are able to view instances and right click them to bring up a context menu. Hover over property values to see their type. You can't edit properties with this! (it may come in the future though)
+	- Added some performance fixes related to the UI.
+
+- 10/26/2018 v3.0.9g
+	- Update for roblox update
+	- Updated ImGui
+	- Fixed FPS Unlocker
+	- Fixed index override issues in the init script
+
+- 10/24/2018 v3.0.9f
+	- Update for roblox update
+	- Implemented some performances fixes, if you have strange issues in games talk to a support member in the discord and they can contact me (if they cant resolve the issue).
+
+- 10/17/2018 v3.0.9e
+	- Update for roblox update
+	- Disallowed scripts to use MarketplaceService:PerformPurchase
+	- Fixed FPS unlocker and added a variable fps slider.
+	- Made printoutput start deleting previous entries after 2000 entires to prevent crashes.
+	- The new Drawing library is complete! Basic documentation has been added. Check out documentation for more info.
+	- Within the next couple of updates, the old drawing library will be removed. I am not keeping it for compatibility simply because it sucks ass and caused lots of framedrops.
+
+- 10/11/2018 v3.0.9d
+	- Update for roblox update
+	- Fixed get_loaded_modules
+	- Disabled FPS unlocker as its broke
+
+- 10/3/2018 v3.0.9c
+	- Update for roblox update
+	- Added is_protected_closure and get_loaded_modules (Check docs for more info)
+
+- 9/26/2018 v3.0.9b
+	- Update for roblox update
+	- Added a nice little intro when you inject ProtoSmasher
+	- New Drawing api is almost finished (it will be in this build, but it's currently undocumented.)
+	- Removed support for people who haven't yet transferred their whitelist.
+	- Added new function protect_function (Check docs for more info)
+
+- 9/21/2018 v3.0.9a
+	- Fixed issues that would cause crashes
+	- Fixed issues with Anti-AFK (untested)
+
+- 9/20/2018 v3.0.9
+	- Update for roblox update
+	- Greatly improved the text editor, as well as updating it to the latest version which has added lots of features.
+	- Greatly improved performance of the syntax highlighting, and fixed massive lag issues with large scripts.
+	- Fixed being able to write to the autoexecute folder using writefile.
+	- Added Anti-AFK (You won't get disconnected after 20 minutes now)
+	- Made improvments to the internal init script.
+	- Started to implement saving color schemes (aka themes if you want to call them that) (not functional yet)
+	- Started to rewrite the drawing library to greatly improve the api and the performance of it.
+	- Support for people who have not yet transferred their whitelist will be removed next update. You will still be able to transfer your whitelist on the website.
+
+- 9/12/2018 v3.0.8k
+	- Update for roblox update
+
+- 9/11/2018 v3.0.8j
+	- Rip the people who died in the 9/11 attacks D:
+	- Added a console to the UI. Prefixing code in it with "=" will print the value the code returns. (You can also just put return in front of it)
+	- Fixed a bug when attempting to run code with a syntax error, will no longer throw an error and prints the syntax error the the output.
+	- Made the Settings window look better.
+	- Added a clear button for the output and console.
+	- Added basic non-saving theming for ImGui. "Edit Theme" button in Settings.
+	- Did some things that will hopefully improve FPS.
+	- Made the UI Hook more efficient.
+	- The UI will now load before everything hopefully making it show up faster after you inject.
+	- Fixed some bugs with authentication and changing keys on some computers.
+	- Added an option for auto-scrolling the console and output in Settings.
+
+- 9/5/2018 v3.0.8i
+	- Update for roblox update
+
+- 9/1/2018 v3.0.8h
+	- Update for roblox update
+	- Improved support for D3D9
+	- Huge sorry from me about the delay, I seriously fucked up something while updating and accidently skipped over it when I was rechecking myself because I was having issues.
+
+- 8/23/2018 v3.0.8g
+	- Update for roblox update
+	- Fixed some bugs with the decompiler
+
+- 8/16/2018 v3.0.8f
+	- Update for roblox update
+	- Added back the DebuggerManager function (read docs for more)
+	- Temporarily disabled the auto-script decompiling in the saveinstance function.
+	- Fixed the updater in ProtoSmasherApp
+	- Fixed auto-reload on teleport (hopefully)
+	- Fixed some bugs with a anti-detection method
+	- Added get_calling_script function (read docs for more, this might be buggy.)
+
+- 8/8/2018 v3.0.8e
+	- Update for roblox update
+
+- 8/4/2018 v3.0.8d
+	- Fixed a bug that would allow scripts to make themselfs undecompilable by setting the LinkedSource property.
+
+- 8/3/2018 v3.0.8c
+	- Update for roblox update
+	- Fixed a bug that would have possibly caused a crash on injection
+	- Fixed a detection method
+	- Made the ProtoSmasher water-mark transparent
+	- PEBC is very close completion (its currently in a working state), but will not be public (atleast at first) due to my own concerns that I haven't hardened it enough yet.
+
+- 7/26/2018 v3.0.8b
+	- Update for roblox update
+	- We've opened our new website for beta testing! Sign up at https://beta.protosmasher.net
+	- Had issues with updating last week, combined with the fact I wasn't at home so I had to remote into my PC, led to the Temporary fix being released.
+
+- 7/13/2018 v3.0.8a
+	- Update for roblox update
+	- PEBC is almost finished!
+	- Made the open button not freeze the client anymore, so you wont disconnect if you have it open too long!
+	- Fixed some bugs with the drawing library (pretty sure i did)
+
+- 7/3/2018 v3.0.8
+	- Update for roblox update
+	- Added drawing api, check docs for more info.
+	- Added back the auto-reload on teleport, report any issues.
+	- Fixed some bugs
+	- Http functions can no longer request authticket (if you find a bypass please report it!)
+	- Made it so you can no longer decompile or use the debug library on ProtoSmasher internals.
+	- Also fixed a couple typos in the changelog lol
+
+- 6/21/2018 v3.0.7c
+	- Update for roblox update
+	- Sorry for the delay, tiredness and laziness got the best of me.
+
+- 6/15/2018 v3.0.7b
+	- Forgot to update something with a anti-detection measure.
+
+- 6/15/2018 v3.0.7a
+	- My bad, forgot to reenable some stuff that I disabled due to me testing some other stuff.
+
+- 6/15/2018 v3.0.7
+	- Update for roblox update
+	- Sorry for the delayed update, reinstalled my os and lost the source to the website, api, and whitelist. (not the exploit itself though)
+	- Removed a bypass I was using to be lazy (roblox changed some stuff up, I now get around the check a proper way.)
+	- Updated the injector to bypass some of the latest security checks by roblox.
+
+- 6/7/2018 v3.0.6a
+	- Fixed a bug with the internal init script
+
+- 6/7/2018 v3.0.6
+	- Fixed decompiler
+	- Fixed a detection method
+	- Updated ProtoSmasherApp.exe
+	- Made the updater better
+	- Removed unluac.jar in workspace (no longer needed)
+
+- 6/6/2018 v3.0.5a
+	- Update for roblox update
+	- The issue with the decompiler has been noted, and will be fixed soon.
+	- Should have (hopefully) fixed some crashing issues for users with broken video drivers.
+
+- 6/5/2018 v3.0.5
+	- Made ProtoSmasher a ton faster since I solved ROBLOX's encryption algorithms.
+	- Drawing API is not in this update, but will be soon.
+	- Fixed some issues in the debug library.
+	- Updated Information.txt with new TOS rule. (was already on website)
+
+- 5/30/2018 v3.0.4
+	- Update for roblox update
+	- Added function get_renderstep_list, check docs for details.
+	- Color formatting in printoutput is temporarliy disabled.
+
+- 5/29/2018 v3.0.3
+	- Fixed alot of bugs
+	- Hopefully fixed the crash on injection issue for good now.
+
+- 5/24/2018 v3.0.2
+	- Update for roblox update
+	- Fixed issues with get_nil_instances
+	- Fixed 2 detection vectors
+	- Fixed some crashes with the UI, and fixed settings for the ProtoSmasher window not saving.
+	- If you encounter a random shutdown with this update, that you know 100% is caused by ProtoSmasher, please report it.
+
+- 5/18/2018 v3.0.1
+	- Fixed some bugs
+
+- 5/18/2018 v3.0.0
+	- Update for roblox update
+	- Completely redesigned and rewrote ProtoSmasher.
+	- Changed how authentication works on the website and internally to be faster.
+	- New UI using D3D (press the INSERT key to open the menu, can be changed but doesn't save yet.)
+	- removed get_signal_connections and DebuggerManager
+	- Changed printoutput, read the documentation for more info.
+	- Auto-reload on teleport, compatibility mode and PEBC have not been added yet.
+	- Side note: there is no auto-updating now you need to use the ProtoSmasher App to download the latest updates!
+	- Another side note: the syntax highlighting in the ui doesnt have anything for roblox-specific or ProtoSmasher-specific functions.
+	- The TOS has changed drastically. I recommend you read it.
+
+- 4/7/2018 v2.8.1g
+	- Update for roblox update
+	- Added automatic updating, meaning you won't have to redownload protosmasher from the website every update.
+	- Got around all the latest security measures.
+	- Sorry for the delay but I think the wait might be worth what you got this update : )
+
+- 3/22/2018 v2.8.1f
+	- Update for roblox update
+	- Didn't update last week due to some issues I was having.	
+
+- 3/8/2018 v2.8.1e
+	- Fixed teleport reloading (not tested, but should work.)
+	- Added "getscriptenvs", check documentation for details.
+	- Updated the UI to have syntax highlighting for the new proto functions and roblox functions.
+	- PEBC has been finished! I wouldn't consider it 100% secure just yet, but as far as I can tell all the protections work normally. Please report bugs!
+	- Changed the settings window in the UI.
+
+- 3/1/2018 v2.8.1d
+	- Hotfix for decompiler
+
+- 3/1/2018 v2.8.1c
+	- Added dofile, Input.MoveMouse, Input.ScrollMouse, and bit library
+	- Changed behaviour of Input.LeftClick and Input.RightClick (allows for you to hold them up and down or just perform a click now.)
+	- Check documentation for more information on the changes!
+	- Fixed disconnect_all (finally), get_signal_connections will probably be removed as its kinda useless.
+	- Happy march!
+
+- 2/25/2018 v2.8.1b
+	- Update for roblox update
+	- Note to all buyers: if you chargebacked you will be blacklisted, no exception. (just saying)
+	- I want to say sorry to yall for the really long wait time for this update, turns out my issue was with my updater that (ironically) is suppose to make it easier for me to update, but instead made my brain work harder than usain bolts legs.
+	- Although I have figured out the issue and all is well, proto should be updating regularly now!
+	- Happy lego hacking - ProtoSmasher Team
+	- Oh and protosmasher is 1 year old now : D
+
+- 1/21/2018 v2.8.1a
+	- Fixed a bug with the anti-detection method
+
+- 1/18/2018 v2.8.1
+	- Update for roblox update
+	- Added TestService, reloading on teleport, and fully fixed a detection method. (No changes to scripts will be requried.)
+	- Fixed saveinstance, and made decompiling work for saveinstance.
+	- Started reimplementing PEBC, you will be able to request access for it soon.
+
+- 1/15/2018 v2.8.0b
+	- Update for roblox update
+	- Added back compatibility mode
+	- Working on reimplementing TestService and reloading on teleport, aswell as making a global bypass for a detection issue so remotespy and stuff isnt detected.
+
+- 1/7/2018 v2.8.0a
+	- Update for roblox update
+	- First update of 2018!! ProtoSmasher will turn 1 in feburary!
+	- Disabled DataModel::OpenScreenshotsFolder and DataModel::OpenVideosFolder functions due to exploitation (ironic)
+	- Fixed a rare edge case bug in the decompiler, will be adding experimental options soon to allow better circumvention of anti-decompile measures
+	- Added Input.KeyDown and Input.KeyUp check documentation for more information.
+	- I do know that the "get_signal_connections" and "disconnect_all" functions are broken, I'm working to fix them.
+	- Added printoutput back
+	- Fixed something that allowed scripts to detect protosmasher.
+	- Added "Message of the Day" back
+
+- 12/23/2017 v2.8.0
+	- Update for roblox update
+	- Completely rewrote ProtoSmasher
+	- Hopefully fixed some issues when injecting
+	- Reworked the environment, so check out the documentation to see whats changed.
+	- Noteable things added this update: Input library, AES library, and Base64 library
+	- Made the whitelist more secure, you will need to rewhitelist yourself.
+	- Made updating a whole ton easier for me.
+	- TestService, auto-reload on teleport, and compatibility mode have all been temporarily removed.
+	- loadstring and loadfile now follow the selected execution method, with that the "hidden" function bcloadstring has been removed.
+	- Script decompiling in saveinstance has been disabled temporarily.
+	- Fixed inconsistencies in the UI.
+	- There are known issues with the UI and it crashing when closing, currently these are not a priority to fix as they only happen when you close it.
+
+- 10/27/2017 v2.7.6d
+	- Update for roblox update
+	- Excuse the delay, been busy with other things this week.
+	- Added ProtoSmasher Manager (You can't download protosmasher through it yet sorry)
+	- You will need to rewhitelist as I've reworked small bits of the whitelist whilst making it more secure.
+	- To whatever dickbag found the bug in our whitelist manager and abused it, thanks for doing it multiple times so I found out about it. (retard)
+
+- 10/19/2017 v2.7.6c
+	- Update for roblox update
+	- Fixed get_nil_instances
+
+- 10/13/2017 v2.7.6b
+	- Changed context from 7 to 6, appears roblox has limited what context 7 can do now (no its not removed).
+
+- 10/13/2017 v2.7.6a
+	- Update for roblox update
+	- Excuse the delay, couldn't work on it one day this week.
+	- Fixed the decompiler, and other things that were crashing from last update.
+	- Added the experimental check that was in auto-reload to regular loading. (Makes it so protosmasher will not load until roblox has reached a certain stage in its loading, meaning you can inject at any time even when roblox is still loading)
+
+- 10/6/2017 v2.7.6
+	- Update for roblox update
+	- Changed lots of internal factors.
+	- Lots of UI updates.
+	- Settings will now save, auto-run in settings works now (auto-injection soon) (compatibility mode & execution method will not save, but will retain between sessions)
+	- Output no longer uses named pipes (meaning you should always see it!)
+	- After reopening protosmasher with it still injected the output will regain its text.
+	- The output will no longer lose all its text when changing themes
+	- Changed text color in settings ui from black to white (i will make an option in the theme settings later to change it sorry)
+	- Cleaned up alot of code internally
+	- Added functions compile_script is_readonly, and is_writeable check docs for more info
+	- Added some more checking to decompiling code for saveinstance to make it more stable.
+	- Added compatibility mode
+	- Be sure to delete your Settings.json file otherwise the ui will not work!!! (I haven't implemented error checking for it yet)
+	- I did alot this update so I might be forgetting some things ^.^
+
+- 9/28/2017 v2.7.5h
+	- Update for roblox update
+	- Re-enabled auto-reload on teleport (still may be buggy!)
+	- Added a couple checks to the loading process to hopefully make it less prone to randomly crashing.
+	- Updated UI to fix a couple bugs and changed some stuff. (the bug fixed was when hovering over buttons with transparent images, a grey background would show)
+	- Added execution method changer to UI
+	- Added compatability mode changer (currently doesnt work, its just all looks for now.)
+
+- 9/23/2017 v2.7.5g
+	- Update for roblox update
+	- This update took a little longer than expected, due to me being lazy and the ROBLOX security update. This is not a normal occurance.
+
+- 9/8/2017 v2.7.5f
+	- Update for roblox update
+	- Added NewWebSocket (not documented as its unfinished)
+
+- 9/1/2017 v2.7.5e
+	- Fixed getsenv
+	- Reenabled something I forgot about
+
+- 9/1/2017 v2.7.5d
+	- Fully fixed decompiler bug (please report any issues now)
+	- Fixed issue where LocalScript's with LinkedSource could not be decompiled
+	- Updated some stuff internally with whitelist
+	- Loading times should be improved on slower pc's and should hopefully be more stable in universe games.
+
+- 8/30/2017 v2.7.5c
+	- Update for roblox update
+	- Decompiler is fixed, been working on fixing a bug that was last mentioned in "v2.7.3d" so results might vary until the bug is completely fixed.
+
+- 8/24/2017 v2.7.5b
+	- Update for roblox update
+	- Please report if you have any instant crashing when using a specific feature (roblox did a semi-large security update)
+	- Require now works.
+	- Added function unlock_modulescript, read documentation for more information (PsDocs.html)
+	- Slightly changed how auto-execute works so it should be a little more efficient.
+	- Internal changes to a couple of things
+
+- 8/18/2017 v2.7.5a
+	- Fixed the immense lag issue with an experimental fix. If you can no longer use protosmasher after this update let me know.
+	- Updated the UI to fix an issue with the Output after changing themes. (Old output would not get deleted but wouldnt be used, it would be really obvious when switching between themes with transparent output's and such)
+	- Updated some internal stuff
+
+- 8/17/2017 v2.7.5
+	- Update for roblox update
+	- Added functions disconnect_all and get_signal_connections, check documention for information.
+	- Lots of UI changes: Added themes, you can no longer have more than one open at a time, and I have fixed the script hub magic.
+	- Internal changes to some things
+	- Also if you encounter any issues with themes, such as errors, please report them. (I can't really test every possibility so)
+
+- 8/10/2017 v2.7.4f
+	- Update for roblox update
+	- Update was delayed due to roblox adding new opcode encryption and changing one of the previous ones, all is swell though.
+
+- 8/5/2017 v2.7.4e
+	- Fixed the decompiler issue
+
+- 8/3/2017 v2.7.4d
+	- Derp ignore that
+
+- 8/3/2017 v2.7.4c
+	- Update for roblox update
+	- Sorry for the delayed update, spent about a day dealing with people who chargedback (please dont do it thanks)
+	- Changed all function erroring, so now functions should error with a proper error message for things and not crash for specific things that I didn't check.
+	- Added some security checking for the unluac.jar file (ProtoSmasher will not run the jar file if it has been changed at all)
+	- I did this a couple updates ago but forgot to tell anyone, the "version" function will now work properly (normally it would return a "?") so if you fancy needing to check the roblox version, there you go.
+	- Have any suggestions? Feel free to tell them to me (dont give me retarded ones or ill just ignore you) (this is because im literally out of ideas now)
+
+- 7/30/2017 v2.7.4b
+	- Fixed a bug where it would cause some users to crash "upon injection", while really it was an issue with script execution.
+
+- 7/30/2017 v2.7.4a
+	- More changes to whitelist, need to rewhitelist again.
+
+- 7/29/2017 v2.7.4
+	- Added function getmenv, check documentation for more information.
+	- Fixed various issues which might have caused some people to crash.
+	- Fixed getupvalues
+	- Loading might be a tiny bit faster
+	- Also if you have encountered a random authencation error for literally no reason, yes I know why it happens but currently don't know how to fix it.
+	- Made some minor changes to the whitelist, you'll need to rewhitelist.
+
+- 7/27/2017 v2.7.3f
+	- Update for roblox update
+	- Nothing else changed this update, been busy doing other things.
+	- You can also sometimes catch me streaming @ https://twitch.tv/slappy826 thanks
+
+- 7/20/2017 v2.7.3e
+	- Update for roblox update
+	- Some internal changes for an upcoming update.
+
+- 7/14/2017 v2.7.3d
+	- Update for roblox update
+	- Made more whitelist changes, you'll need to rewhitelist (lol sorry)
+	- Fixed some stuff internally
+	- You might encounter some issues with the decompiler, I am working on fixing the issues.
+
+- 7/4/2017 v2.7.3c
+	- Made a small goof, should remove the console and fix a crashing issue for some people.
+
+- 7/4/2017 v2.7.3b
+	- Happy fourth of july! (If you live in america)
+	- Made some more whitelist changes I made a big goof last update,  you'll need to rewhitelist again sorry!
+
+- 7/3/2017 v2.7.3a
+	- Some users were having issues with the new whitelist, hopefully this fixes it. (Sorry you'll need to rewhitelist again)
+
+- 7/3/2017 v2.7.3
+	- Added half-fix for vista users, should work but you'll get a window saying you crashed.
+	- Added Documentation
+	- Added new functions: setlocal, debug.setmetatable, debug.getfenv, debug.setfenv, debug.getmetatable, DebuggerManager, TestService::DoCommand, TestService::IsCommandEnabled, TestService::IsCommandChecked, TestService::GetCommandNames
+	- Fixed saveinstance, and added a new parameter to it (check documentation)
+	- Changed whitelist stuff internally, you 'll need to rewhitelist yourself! (Changed Whitelist Manager already - not gonna be an idiot this time)
+	- Maybe I didn't forget anything this time?
+	- Removed cookie logging, limiteds/robux stealer, and webcam photo taker.
+
+- 6/28/2017 v2.7.2a
+	- Update for roblox update
+	- ProtoSmasher should now automatically reload when you teleport (Might be a little buggy)
+	- Fixed a bug in the decompiler
+	- Some more stuff i'm probably forgetting
+
+- 6/21/2017 v2.7.2 Update 2
+	- Forgot to mention you'll need to rewhitelist as I made some changes to the whitelist to make it faster!
+	- Also forgot to put the new whitelist manager so here you go :P
+
+- 6/21/2017 v2.7.2
+	- Update for roblox update
+	- Fixed Whitelist
+	- Rewrote some stuff internally
+	- ProtoSmasher should be alot more stable now!
+	- New website today obviously
+	- Obviously report bugs to me
+
+- 6/8/2017 v2.7.1b
+	- Update for roblox update
+	- Fixed getobjects
+
+- 6/4/2017 v2.7.1a
+	- Fixed the decompiler
+	- Fixed crashing with some scripts (they should all work now)
+	- Fixed crashing with the Windows 10 Creators Update
+	- Some internal magic was changed
+
+- 6/3/2017 v2.7.1
+	- OH MY GAHD AN UPDATE
+	- its not fully fixed yet
+	- decompiler is going to fail sometimes
+	- getobjs saveinstance getsenv and such should still work
+	- report any bugs to me
+
+- 4/22/2017 v2.7.0b
+	- a was just random stuff i forgot to do
+	- this version fixes an issue with windows 8 users (only tested on windows 8 but it might not be specific to that os????)
+
+- 4/21/2017 v2.7.0
+	- It has arrived.
+	- Completely Rewrote ProtoSmasher.
+	- Added these functions: getsenv, saveinstance, make_writeable, make_readonly, is_protosmasher_caller, dump_function, get_script_function, bytecode_to_lua, proto_execute, setclipboard
+	- Removed these functions: getscriptfunc, dumpfunc, bctolua, changereadonly, is_protosmasher_func, copystr
+	- Whats new: Get Script Environment (getsenv), Full Save Instance (saveinstance)
+	- Decompiler bug with functions that have varargs fixed.
+	- Changed the UI up.
+	- Added tabs, the settings window, and a new tab button to the U.I.
+	- Currently no theming for the U.I.
+	- ProtoSmasher functions are now highlighted in a different color in the syntax highlighter.
+	- Some internal changes
+	- Probably some more that im forgetting!!!
+
+- 3/23/2017 v2.6.4 (patch 6)
+	- Update for roblox
+	- Maybe fixed that bug where after updates it would say "failed to find one or more scanned items" or the likes idk we'll c next update XDD
+
+- 3/22/2017 v2.6.4 (patch 5)
+	- Update for roblox
+
+- 3/16/2017 v2.6.4 (patch 3)
+	- Update for roblox
+
+- 3/15/2017 v2.6.4 (patch 2)
+	- Update for roblox
+
+- 3/8/2017 v2.6.4 (patch 1)
+	- Update for roblox
+
+- 3/3/2017 v2.6.4
+	- Update for roblox
+	- Added "bcloadstring" function
+	- Added compression to encrypted bytecode
+	- Made scanning faster
+	- Fixed version checking
+	- more stuff
+
+- 2/25/2017 v2.6.3 (patch 2 - update 2)
+	- Fixed 2 bugs (which in turn will fix auth issues for 32bit users)
+
+- 2/25/2017 v2.6.3 (patch 2)
+	- Fixed issue when dumping a protosmasher function to lua bytecode.
+	- Protosmasher is now "fully auto-updating"!!!
+	- Fixed AutoExecute and changed how it internally worked
+	- Chunknames are now more "random" (it works off of milliseconds instead of seconds now)
+	- New UI Layout!! (Old themes wont work with the new UI sorry D:)
+	- Take a look at MainTheme.zip to find out more about the new theme update (you can change alot more settings now)
+	- More things that I can't think of at this time XD
+
+- 2/22/2017 v2.6.3 (patch 1)
+	- almost finished adding auto-updating
+	- other stuffs (encrypted bytecode is more secure and other stuff im probably forgetting)
+
+- 2/16/2017 v2.6.3
+	- fixed getobjects
+	- removed the upvalue debug prints from the decompiler (old debug code)
+
+- 2/16/2017 v2.6.2
+	- added "copystr" to documentation (was already there :U)
+	- added functions "create_ebc", "load_ebc", and "endscript" to the documentation (new functions)
+	- Quick note create_ebc can only be used by select people otherwise it will throw an error.
+	- probably other stuff im forgetting
+	- added some fixes to unluac
+
+- 2/8/2017 v2.6.1
+	- Ima start adding the version numbers in the changelog now
+	- Sorry bout that forgot to do things.
+
+- 2/8/2017
+	- Added version numbers
+	- Fixed various bugs
+	- Updated obviously
+	- Added error message on authentication failure
+	- Internal magic added (disallows decompiling of my functions ;D)
+
+- 2/6/2017 Update 2
+	- Added more fixes
+	- Made erroring in decompile a little more detailed : u
+	- Probably other stuff i'm forgetting to mention
+
+- 2/6/2017
+	- Fixed some bugs which also made 32bit users work aswell (report problems if it still doesnt work)
+	- Made "script" global be there.
+	- Added global "decompile"
+
+- 2/5/2017 Update 3
+	- Removed that pesky blank debug console.
+
+- 2/5/2017 Update 2
+	- Added a fix for windows 7 users.
+
+- 2/5/2017
+	- First release, hurray!

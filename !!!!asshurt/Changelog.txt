@@ -1,0 +1,34 @@
+/-Update 08 9/24/17
+Enabled 'commands' window.
+
+/-Update 07 9/20/17
+Fixed the issue where asshurt7 couldnt compile big scripts and would throw (failed to compile script)
+issue caused by it not getting the full script from the scripts window for being to huge causing it to error
+
+/-Update 06 9/19/17
+ROBLOX Update
+
+/-Update 05 9/16/17
+Added some new functions. See docs.html
+
+/-Update 04 9/15/17
+Should slightly improve stability
+Fixed sizing of 'credits' text
+added 'commands' window, which i might use to make Asshurt7 also run commands like Asshurt does.
+
+/-Update 03 9/13/17
+ROBLOX Update
+added proper threading so when you run scripts with infinite while loops it doesn't freeze the application preventing
+you from running more scripts
+
+/-Update 02 9/11/17
+Added some more script's into the script menu
+
+/-Update 01 9/9/17
+Added function "loadstring()()" see docs.html
+Added ability to convert script's into loadstring format in script's menu paste script into execute box then click convert
+to loadstring in the menu.
+Added script's autorun, put .lua script's into a folder named ASSHURT7_AUTORUN.
+Added gsub, sub, and common string functions.
+Added hitler bunker script in script's menu.
+Added private staff log changelog!

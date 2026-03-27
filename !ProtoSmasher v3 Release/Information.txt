@@ -1,0 +1,23 @@
+Thank you for choosing ProtoSmasher!
+
+Many thanks to these people:
+- Alureon
+- Chirality
+- Austin / littleau
+- Nexure
+
+ProtoSmasher TOS (Terms of Service)
+- You agree to not reverse engineer the product.
+- You agree to not release the files.
+- You agree to not chargeback, this will result in a whitelist deactivation and cannot be disputed.
+- You agree to not share or sell your whitelist.
+- You understand that the service will not be updated indefinitely and can be discontinued at any time.
+- The Terms of Service can be changed at any time, without any notice.
+- You agree to not publicly spread lies or false misconceptions about the Product.
+- You agree to not use the "ProtoSmasher" name to scam or trick people into installing malware.
+- The service is provided "as is" and does not include a warranty of any kind.
+- You agree that what you do with the service is your responsibility.
+- You understand that your whitelist can be deactivated at anytime for any reason the service finds applicable.
+- You understand that information about your computers hardware or internet connection may be collected.
+- You agree that if you break any of the items listed in the "Terms of Service", your whitelist will be deactived.
+- You agree to not use the Service in order to create methods to detect the Service.

@@ -1,0 +1,7 @@
+{
+    "DisableAutoexec": false,
+    "EnableIPC": false,
+    "EnableLoadstringBytecode": true,
+    "UseCoreScriptState": false,
+    "UseNewLuauParser": false
+}

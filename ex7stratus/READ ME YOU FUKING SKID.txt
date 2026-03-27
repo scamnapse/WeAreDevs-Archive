@@ -1,0 +1,4 @@
+you have to copy and paste the lua5.1.dll into your roblox install directory or it wont fucking work
+so like C:\Program Files (x86)\RobloxRevivalidfk\Versions\version-random
+or like C:\Users\USER\AppData\Local\REVIVALNAME\Versions\version-random
+if you can't do this you have no right to use this

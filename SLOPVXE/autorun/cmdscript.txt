@@ -1,0 +1,21 @@
+s = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui)
+t = Instance.new("TextBox", s)
+t.Size = UDim2.new(1,0,0.05,0)
+t.Position = UDim2.new(0, 0, 0.95, 0)
+t.BackgroundColor3 = Color3.new(108, 108, 108)
+t:CaptureFocus()
+
+while true do wait(0.1)
+if t.Text == "btools me" then
+t.Text = ""
+a = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+a.BinType = "Hammer"
+
+b = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+b.BinType = "Clone"
+end
+if t.Text == "loukatothebus" then
+t.Text = ""
+print("hi")
+end
+end

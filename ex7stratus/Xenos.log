@@ -1,0 +1,180 @@
+2024-06-23 09:57:08 *NORMAL*     Started on Windows 10.0.0.19045 x64. Driver status: 0xC0000225
+2024-06-23 09:58:03 *CRITICAL*   Injection initiated. Mode: 1, process type: 0, pid: 7296, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 09:58:03 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-23 09:58:03 *ERROR*      Failed to inject image using manual map, status: 0xC00000EF
+2024-06-23 09:58:03 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC00000EF
+2024-06-23 09:58:47 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 7296, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 09:58:47 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-23 09:58:47 *ERROR*      Invalid failure status: 0x0
+2024-06-23 09:58:47 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC0000135
+2024-06-23 10:00:50 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 7296, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 10:00:50 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-23 10:00:51 *ERROR*      Invalid failure status: 0x0
+2024-06-23 10:00:51 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC0000135
+2024-06-23 10:00:56 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 7296, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 10:00:56 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-23 10:00:57 *ERROR*      Invalid failure status: 0x0
+2024-06-23 10:00:57 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC0000135
+2024-06-23 10:03:49 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 7296, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 10:03:50 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-23 10:03:50 *ERROR*      Invalid failure status: 0x0
+2024-06-23 10:03:50 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC0000135
+2024-06-23 10:08:35 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 7296, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 10:08:35 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 10:12:08 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 7296, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 10:12:08 *ERROR*      Can not attach to the process.
+An attempt was made to access an exiting process.
+
+2024-06-23 10:12:23 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 7880, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 10:12:23 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 10:16:21 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 7880, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 10:16:21 *ERROR*      Can not attach to the process.
+An attempt was made to access an exiting process.
+
+2024-06-23 10:16:35 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 13480, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 10:16:35 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 10:26:20 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 13480, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 10:26:20 *ERROR*      Can not attach to the process.
+An attempt was made to access an exiting process.
+
+2024-06-23 10:26:32 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 8556, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 10:26:32 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 10:28:28 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 17244, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 10:28:28 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 10:30:21 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 17244, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 10:30:21 *ERROR*      Can not attach to the process.
+An attempt was made to access an exiting process.
+
+2024-06-23 10:30:40 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 12564, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 10:30:40 *CRITICAL*   Injecting image 'D:\System48.dll'
+
+2024-06-23 11:07:39 *NORMAL*     Started on Windows 10.0.0.19045 x64. Driver status: 0xC0000225
+2024-06-23 11:12:26 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 7548, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 11:12:26 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-23 11:12:28 *ERROR*      Invalid failure status: 0x0
+2024-06-23 11:12:28 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC0000135
+2024-06-23 11:13:03 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 7548, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 11:13:03 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 11:17:23 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 8592, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 11:17:23 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 11:21:50 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 8592, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 11:21:50 *ERROR*      Can not attach to the process.
+An attempt was made to access an exiting process.
+
+2024-06-23 11:22:06 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 12916, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 11:22:06 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 11:28:07 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 12136, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 11:28:07 *CRITICAL*   Injecting image 'D:\System48.dll'
+
+2024-06-23 13:15:55 *NORMAL*     Started on Windows 10.0.0.19045 x64. Driver status: 0xC0000225
+2024-06-23 13:22:49 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 15780, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 13:22:49 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-23 13:22:49 *ERROR*      Invalid failure status: 0x0
+2024-06-23 13:22:49 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC0000135
+2024-06-23 13:26:33 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 4848, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 13:26:33 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 13:33:31 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 15724, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 13:33:31 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 14:00:01 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 16408, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 14:00:01 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 14:06:05 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 16408, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 14:06:05 *ERROR*      Can not attach to the process.
+An attempt was made to access an exiting process.
+
+2024-06-23 14:13:47 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 16136, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 14:13:47 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 14:21:59 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: -1, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 14:21:59 *ERROR*      Can not attach to the process.
+An invalid Client ID was specified.
+
+2024-06-23 14:22:10 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 12612, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 14:22:10 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 14:27:04 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 17044, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 14:27:04 *CRITICAL*   Injecting image 'D:\CandyCane.dll'
+2024-06-23 14:27:08 *ERROR*      Invalid failure status: 0x0
+2024-06-23 14:27:08 *ERROR*      Failed to inject image 'D:\CandyCane.dll'.
+Error code 0xC0000135
+2024-06-23 14:27:25 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 17044, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 14:27:25 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 14:33:30 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 15372, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 14:33:30 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 15:59:01 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 15372, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 15:59:01 *ERROR*      Can not attach to the process.
+An attempt was made to access an exiting process.
+
+2024-06-23 15:59:10 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 10548, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 15:59:10 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-23 15:59:11 *ERROR*      Invalid failure status: 0x0
+2024-06-23 15:59:11 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC0000135
+
+2024-06-23 16:02:01 *NORMAL*     Started on Windows 10.0.0.19045 x64. Driver status: 0xC0000225
+2024-06-23 16:02:04 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 10548, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 16:02:04 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-23 16:02:05 *ERROR*      Invalid failure status: 0x0
+2024-06-23 16:02:05 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC0000135
+2024-06-23 16:02:37 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 10548, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 16:02:37 *CRITICAL*   Injecting image 'D:\ex7stratus\lua5.1.dll'
+2024-06-23 16:02:37 *ERROR*      Invalid failure status: 0x0
+2024-06-23 16:02:37 *ERROR*      Failed to inject image 'D:\ex7stratus\lua5.1.dll'.
+Error code 0xC0000135
+2024-06-23 16:02:40 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-23 16:02:40 *ERROR*      Invalid failure status: 0x0
+2024-06-23 16:02:40 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC0000135
+2024-06-23 16:24:37 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 15820, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 16:24:37 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-23 16:24:37 *ERROR*      Invalid failure status: 0x0
+2024-06-23 16:24:37 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC0000135
+
+2024-06-23 16:36:33 *NORMAL*     Started on Windows 10.0.0.19045 x64. Driver status: 0xC0000225
+2024-06-23 16:37:25 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 14340, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 16:37:25 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-23 16:37:26 *ERROR*      Invalid failure status: 0x0
+2024-06-23 16:37:26 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC0000135
+
+2024-06-23 16:38:40 *NORMAL*     Started on Windows 10.0.0.19045 x64. Driver status: 0xC0000225
+2024-06-23 16:39:28 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 14340, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 16:39:28 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-23 16:40:28 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 14340, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-23 16:40:28 *CRITICAL*   Injecting image 'D:\ex7stratus\riched20.dll'
+2024-06-23 16:40:28 *ERROR*      Failed to inject image using default injection, status: 0xC000010E
+2024-06-23 16:40:28 *ERROR*      Failed to inject image 'D:\ex7stratus\riched20.dll'.
+Error code 0xC000010E
+2024-06-24 13:16:21 *NORMAL*     Started on Windows 10.0.0.19045 x64. Driver status: 0xC0000225
+2024-06-25 05:32:16 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 9908, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-25 05:32:16 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-25 05:32:17 *ERROR*      Invalid failure status: 0x0
+2024-06-25 05:32:17 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC0000135
+2024-06-25 05:33:02 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 9908, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-25 05:33:02 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-25 05:42:32 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 9908, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-25 05:42:33 *ERROR*      Can not attach to the process.
+An attempt was made to access an exiting process.
+
+
+2024-06-25 05:44:26 *NORMAL*     Started on Windows 10.0.0.19045 x64. Driver status: 0xC0000225
+2024-06-25 05:44:49 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 4672, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-25 05:44:49 *CRITICAL*   Injecting image 'D:\System48.dll'
+2024-06-26 09:24:28 *NORMAL*     Started on Windows 10.0.0.19045 x64. Driver status: 0xC0000225
+2024-06-26 09:35:09 *CRITICAL*   Injection initiated. Mode: 0, process type: 0, pid: 10564, mmap flags: 0x0, erasePE: 0, unlink: 0, thread hijack: 0, init routine: '', init arg: ''
+2024-06-26 09:35:09 *CRITICAL*   Injecting image 'D:\ex7stratus\lua5.1.dll'
+2024-06-26 09:35:09 *ERROR*      Invalid failure status: 0x0
+2024-06-26 09:35:09 *ERROR*      Failed to inject image 'D:\ex7stratus\lua5.1.dll'.
+Error code 0xC0000135
+2024-06-26 09:35:11 *CRITICAL*   Injecting image 'D:\ex7stratus\ex7.dll'
+2024-06-26 09:35:13 *ERROR*      Invalid failure status: 0x0
+2024-06-26 09:35:13 *ERROR*      Failed to inject image 'D:\ex7stratus\ex7.dll'.
+Error code 0xC0000135
+

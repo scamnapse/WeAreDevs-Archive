@@ -1,0 +1,7 @@
+What are DLL's?
+
+DLL's are essentially what's needed to Attach & Execute scripts.
+
+We have a wide varity of trusted and stable DLL's for you to choose.
+
+You can switch what DLL you want to use in the 'Settings' from Kiwi X.

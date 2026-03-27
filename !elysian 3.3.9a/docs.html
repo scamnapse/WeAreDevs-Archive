@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Elysian Documentation</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; } /* Alert */
+code span.an { color: #008000; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #0000ff; } /* ControlFlow */
+code span.ch { color: #008080; } /* Char */
+code span.cn { } /* Constant */
+code span.co { color: #008000; } /* Comment */
+code span.cv { color: #008000; } /* CommentVar */
+code span.do { color: #008000; } /* Documentation */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.im { } /* Import */
+code span.in { color: #008000; } /* Information */
+code span.kw { color: #0000ff; } /* Keyword */
+code span.op { } /* Operator */
+code span.ot { color: #ff4000; } /* Other */
+code span.pp { color: #ff4000; } /* Preprocessor */
+code span.sc { color: #008080; } /* SpecialChar */
+code span.ss { color: #008080; } /* SpecialString */
+code span.st { color: #008080; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #008080; } /* VerbatimString */
+code span.wa { color: #008000; font-weight: bold; } /* Warning */
+  </style>
+  <style type="text/css">@font-face {font-family: octicons-link;src: url(data:font/woff;charset=utf-8;base64,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) format('woff');}body {-webkit-text-size-adjust: 100%;text-size-adjust: 100%;color: #333;font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";font-size: 16px;line-height: 1.6;word-wrap: break-word;width: 728px;max-width: 99%;box-sizing: border-box;padding: 30px 30px 8rem 30px;margin-left: auto;margin-right: auto;}body a {background-color: transparent;}body a:active,body a:hover {outline: 0;}body strong {font-weight: bold;}body h1 {font-size: 2em;margin: 0.67em 0;}body img {border: 0;}body hr {box-sizing: content-box;height: 0;}body pre {overflow: auto;}body code,body kbd,body pre {font-family: monospace, monospace;font-size: 1em;}body input {color: inherit;font: inherit;margin: 0;}body html input[disabled] {cursor: default;}body input {line-height: normal;}body input[type="checkbox"] {box-sizing: border-box;padding: 0;}body table {border-collapse: collapse;border-spacing: 0;}body td,body th {padding: 0;}body * {box-sizing: border-box;}body input {font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}body a {color: #4078c0;text-decoration: none;}body a:hover,body a:active {text-decoration: underline;}body hr {height: 0;margin: 15px 0;overflow: hidden;background: transparent;border: 0;border-bottom: 1px solid #ddd;}body hr:before {display: table;content: "";}body hr:after {display: table;clear: both;content: "";}body h1,body h2,body h3,body h4,body h5,body h6 {margin-top: 15px;margin-bottom: 15px;line-height: 1.1;}body h1 {font-size: 30px;}body h2 {font-size: 21px;}body h3 {font-size: 16px;}body h4 {font-size: 14px;}body h5 {font-size: 12px;}body h6 {font-size: 11px;}body blockquote {margin: 0;}body ul,body ol {padding: 0;margin-top: 0;margin-bottom: 0;}body ol ol,body ul ol {list-style-type: lower-roman;}body ul ul ol,body ul ol ol,body ol ul ol,body ol ol ol {list-style-type: lower-alpha;}body dd {margin-left: 0;}body code {font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;font-size: 12px;}body pre {margin-top: 0;margin-bottom: 0;font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;}body .select::-ms-expand {opacity: 0;}body .octicon {font: normal normal normal 16px/1 octicons-link;display: inline-block;text-decoration: none;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}body .octicon-link:before {content: '\f05c';}body:before {display: table;content: "";}body:after {display: table;clear: both;content: "";}body>*:first-child {margin-top: 0 !important;}body>*:last-child {margin-bottom: 0 !important;}body a:not([href]) {color: inherit;text-decoration: none;}body .anchor {display: inline-block;padding-right: 2px;margin-left: -18px;}body .anchor:focus {outline: none;}body h1,body h2,body h3,body h4,body h5,body h6 {margin-top: 1em;margin-bottom: 16px;font-weight: bold;line-height: 1.4;}body h1 .octicon-link,body h2 .octicon-link,body h3 .octicon-link,body h4 .octicon-link,body h5 .octicon-link,body h6 .octicon-link {color: #000;vertical-align: middle;visibility: hidden;}body h1:hover .anchor,body h2:hover .anchor,body h3:hover .anchor,body h4:hover .anchor,body h5:hover .anchor,body h6:hover .anchor {text-decoration: none;}body h1:hover .anchor .octicon-link,body h2:hover .anchor .octicon-link,body h3:hover .anchor .octicon-link,body h4:hover .anchor .octicon-link,body h5:hover .anchor .octicon-link,body h6:hover .anchor .octicon-link {visibility: visible;}body h1 {padding-bottom: 0.3em;font-size: 1.75em;line-height: 1.2;}body h1 .anchor {line-height: 1;}body h2 {padding-bottom: 0.3em;font-size: 1.5em;line-height: 1.225;}body h2 .anchor {line-height: 1;}body h3 {font-size: 1.25em;line-height: 1.43;}body h3 .anchor {line-height: 1.2;}body h4 {font-size: 1em;}body h4 .anchor {line-height: 1.2;}body h5 {font-size: 1em;}body h5 .anchor {line-height: 1.1;}body h6 {font-size: 1em;color: #777;}body h6 .anchor {line-height: 1.1;}body p,body blockquote,body ul,body ol,body dl,body table,body pre {margin-top: 0;margin-bottom: 16px;}body hr {height: 4px;padding: 0;margin: 16px 0;background-color: #e7e7e7;border: 0 none;}body ul,body ol {padding-left: 2em;}body ul ul,body ul ol,body ol ol,body ol ul {margin-top: 0;margin-bottom: 0;}body li>p {margin-top: 16px;}body dl {padding: 0;}body dl dt {padding: 0;margin-top: 16px;font-size: 1em;font-style: italic;font-weight: bold;}body dl dd {padding: 0 16px;margin-bottom: 16px;}body blockquote {padding: 0 15px;color: #777;border-left: 4px solid #ddd;}body blockquote>:first-child {margin-top: 0;}body blockquote>:last-child {margin-bottom: 0;}body table {display: block;width: 100%;overflow: auto;word-break: normal;word-break: keep-all;}body table th {font-weight: bold;}body table th,body table td {padding: 6px 13px;border: 1px solid #ddd;}body table tr {background-color: #fff;border-top: 1px solid #ccc;}body table tr:nth-child(2n) {background-color: #f8f8f8;}body img {max-width: 100%;box-sizing: content-box;background-color: #fff;}body code {padding: 0;padding-top: 0;padding-bottom: 0;margin: 0;font-size: 85%;background-color: rgba(0,0,0,0.04);border-radius: 3px;}body code:before,body code:after {letter-spacing: -0.2em;content: "\00a0";}body pre>code {padding: 0;margin: 0;font-size: 100%;word-break: normal;white-space: pre;background: transparent;border: 0;}body .highlight {margin-bottom: 16px;}body .highlight pre,body pre {padding: 16px;overflow: auto;font-size: 85%;line-height: 1.45;background-color: #f7f7f7;border-radius: 3px;}body .highlight pre {margin-bottom: 0;word-break: normal;}body pre {word-wrap: normal;}body pre code {display: inline;max-width: initial;padding: 0;margin: 0;overflow: initial;line-height: inherit;word-wrap: normal;background-color: transparent;border: 0;}body pre code:before,body pre code:after {content: normal;}body kbd {display: inline-block;padding: 3px 5px;font-size: 11px;line-height: 10px;color: #555;vertical-align: middle;background-color: #fcfcfc;border: solid 1px #ccc;border-bottom-color: #bbb;border-radius: 3px;box-shadow: inset 0 -1px 0 #bbb;}body .pl-c {color: #969896;}body .pl-c1,body .pl-s .pl-v {color: #0086b3;}body .pl-e,body .pl-en {color: #795da3;}body .pl-s .pl-s1,body .pl-smi {color: #333;}body .pl-ent {color: #63a35c;}body .pl-k {color: #a71d5d;}body .pl-pds,body .pl-s,body .pl-s .pl-pse .pl-s1,body .pl-sr,body .pl-sr .pl-cce,body .pl-sr .pl-sra,body .pl-sr .pl-sre {color: #183691;}body .pl-v {color: #ed6a43;}body .pl-id {color: #b52a1d;}body .pl-ii {background-color: #b52a1d;color: #f8f8f8;}body .pl-sr .pl-cce {color: #63a35c;font-weight: bold;}body .pl-ml {color: #693a17;}body .pl-mh,body .pl-mh .pl-en,body .pl-ms {color: #1d3e81;font-weight: bold;}body .pl-mq {color: #008080;}body .pl-mi {color: #333;font-style: italic;}body .pl-mb {color: #333;font-weight: bold;}body .pl-md {background-color: #ffecec;color: #bd2c00;}body .pl-mi1 {background-color: #eaffea;color: #55a532;}body .pl-mdr {color: #795da3;font-weight: bold;}body .pl-mo {color: #1d3e81;}body kbd {display: inline-block;padding: 3px 5px;font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;line-height: 10px;color: #555;vertical-align: middle;background-color: #fcfcfc;border: solid 1px #ccc;border-bottom-color: #bbb;border-radius: 3px;box-shadow: inset 0 -1px 0 #bbb;}body .task-list-item {list-style-type: none;}body .task-list-item+.task-list-item {margin-top: 3px;}body .task-list-item input {margin: 0 0.35em 0.25em -1.6em;vertical-align: middle;}body :checked+.radio-label {z-index: 1;position: relative;border-color: #4078c0;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="elysian-lua-api-documentation">Elysian Lua API Documentation</h1>
+<hr />
+<h3 id="getrawmetatable">getrawmetatable</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>getrawmetatable</b>(variant&lt;<span style = "color:green">table</span>, <span style = "color:green">userdata</span>&gt; obj)</p>
+</blockquote>
+<p>Returns the metatable from a table or userdata, even if it is locked.</p>
+<h3 id="setrawmetatable">setrawmetatable</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>setrawmetatable</b>(variant&lt;<span style = "color:green">table</span>, <span style = "color:green">userdata</span>&gt; obj, <span style = "color:green">table</span> val)</p>
+</blockquote>
+<p>Sets the metatable of a table or userdata, even if it is locked.</p>
+<h3 id="isreadonly">isreadonly</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>isreadonly</b>(<span style = "color:green">table</span> val)</p>
+</blockquote>
+<p>Returns true if the table is read-only.</p>
+<h3 id="setreadonly">setreadonly</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>setreadonly</b>(<span style = "color:green">table</span> tab, <span style = "color:green">boolean</span> readonly)</p>
+</blockquote>
+<p>Sets the read-only flag of a table.</p>
+<h3 id="printconsole">printconsole</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>printconsole</b>(<span style = "color:green">string</span> val [, <span style = "color:green">number</span> r, <span style = "color:green">number</span> g, <span style = "color:green">number</span> b])</p>
+</blockquote>
+<p>Prints <code>val</code> to Elysian’s console with color <code>r</code>, <code>g</code>, <code>b</code>. Default color is 0, 0, 200.</p>
+<h3 id="printdebug">printdebug</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>printdebug</b>(<span style = "color:green">string</span> val)</p>
+</blockquote>
+<p>Prints <code>val</code> to the console (View-&gt;Console-&gt;Toggle)</p>
+<h3 id="getobjects">getobjects</h3>
+<blockquote>
+<p><span style = "color:green">string</span> <b>content</b>)</p>
+</blockquote>
+<p>Internal function used by DataModel::GetObjects (see init.lua)</p>
+<h3 id="readfile">readfile</h3>
+<blockquote>
+<p><span style = "color:green">string</span> <b>readfile</b>(<span style = "color:green">string</span> filename)</p>
+</blockquote>
+<p>Returns the contents of a file in the workspace folder</p>
+<h3 id="loadfile">loadfile</h3>
+<blockquote>
+<p><span style = "color:green">function</span> <b>loadfile</b>(<span style = "color:green">string</span> filename)</p>
+</blockquote>
+<p>Loads a file from the workspace folder. Returns nil and an error on error. Similar to executing <code>loadstring(readfile(filename))</code>.</p>
+<h3 id="getgenv">getgenv</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>getgenv</b>()</p>
+</blockquote>
+<p>Returns the global environment for Elysian.</p>
+<h3 id="getrenv">getrenv</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>getrenv</b>()</p>
+</blockquote>
+<p>Returns the global environment for game scripts.</p>
+<h3 id="clipboard.set">Clipboard.set</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>Clipboard.set</b>(<span style = "color:green">string</span> data)</p>
+</blockquote>
+<p>Sets the contents of the clipboard to <code>data</code>.</p>
+<h3 id="mouse1press">mouse1press</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>mouse1press</b>([<span style = "color:green">number</span> x, <span style = "color:green">number</span> y])</p>
+</blockquote>
+<p>Presses the left mouse button.</p>
+<h3 id="mouse1release">mouse1release</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>mouse1release</b>([<span style = "color:green">number</span> x, <span style = "color:green">number</span> y])</p>
+</blockquote>
+<p>Releases the left mouse button.</p>
+<h3 id="mouse1click">mouse1click</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>mouse1click</b>([<span style = "color:green">number</span> delay, <span style = "color:green">number</span> x, <span style = "color:green">number</span> y])</p>
+</blockquote>
+<p>Clicks the left mouse button with an optional delay in between press and release. Delay default is ~0.03 seconds.</p>
+<h3 id="mouse2press">mouse2press</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>mouse2press</b>([<span style = "color:green">number</span> x, <span style = "color:green">number</span> y])</p>
+</blockquote>
+<p>Presses the right mouse button.</p>
+<h3 id="mouse2release">mouse2release</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>mouse2release</b>([<span style = "color:green">number</span> x, <span style = "color:green">number</span> y])</p>
+</blockquote>
+<p>Releases the right mouse button.</p>
+<h3 id="mouse2click">mouse2click</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>mouse2click</b>([<span style = "color:green">number</span> delay, <span style = "color:green">number</span> x, <span style = "color:green">number</span> y])</p>
+</blockquote>
+<p>Clicks the right mouse button with an optional delay in between press and release. Delay default is ~0.03 seconds.</p>
+<h3 id="keypress">keypress</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>keypress</b>(<span style = "color:green">KeyCode</span> key)</p>
+</blockquote>
+<p>Presses a key. If a number is passed for <code>key</code>, Elysian will interpret it as a <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731(v=vs.85).aspx">virtual key code</a> and attempt to convert it to a <a href="https://developer.roblox.com/api-reference/enum/KeyCode">KeyCode</a> for compatibility with scripts created for older versions of Elysian.</p>
+<h3 id="keyrelease">keyrelease</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>keyrelease</b>(<span style = "color:green">KeyCode</span> key)</p>
+</blockquote>
+<p>Releases a key. If a number is passed for <code>key</code>, Elysian will interpret it as a virtual key code. See <a href="#keypress">keypress</a>.</p>
+<h3 id="mousemove">mousemove</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>mousemove</b>(<span style = "color:green">number</span> x, <span style = "color:green">number</span> y [, <span style = "color:green">number</span> dx, <span style = "color:green">number</span> dy])</p>
+</blockquote>
+<p>Moves the cursor to a location inside Roblox’s window. <code>dx</code> and <code>dy</code> are optional mouse delta parameters to be sent to Roblox. If not provided, they are equivalent to <code>x - current_mouse_position.X</code> and <code>y - current_mouse_position.Y</code> respectively.</p>
+<h3 id="mousemoverel">mousemoverel</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>mousemoverel</b>(<span style = "color:green">number</span> dx, <span style = "color:green">number</span> dy)</p>
+</blockquote>
+<p>Moves the cursor relatively.</p>
+<h3 id="mousescroll">mousescroll</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>mousescroll</b>(<span style = "color:green">boolean</span> forward [, <span style = "color:green">number</span> x, <span style = "color:green">number</span> y])</p>
+</blockquote>
+<p>Scrolls the mouse. For compatibility with scripts created for older versions of Elysian, a number can be passed to <code>forward</code> where a positive number scrolls the mouse up, a negative number scrolls the mouse down, and one scroll “click” is equal to 120.</p>
+<h3 id="writefile">writefile</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>writefile</b>(<span style = "color:green">string</span> filename, <span style = "color:green">string</span> data [, <span style = "color:green">boolean</span> binary])</p>
+</blockquote>
+<p>Writes data to a file in the workspace folder. Returns true if successful.</p>
+<h3 id="appendfile">appendfile</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>appendfile</b>(<span style = "color:green">string</span> filename, <span style = "color:green">string</span> data [, <span style = "color:green">boolean</span> binary])</p>
+</blockquote>
+<p>Appends data to a file in the workspace folder. Returns true if successful.</p>
+<h3 id="mkdir">mkdir</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>mkdir</b>(<span style = "color:green">string</span> path)</p>
+</blockquote>
+<p>Creates a directory in the workspace folder. Returns true if successful.</p>
+<h3 id="saveinstance">saveinstance</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>saveinstance</b>(variant&lt;<span style = "color:green">Instance</span>, <span style = "color:green">table</span>&gt; instance, <span style = "color:green">string</span> name [, <span style = "color:green">table</span> options])</p>
+</blockquote>
+<p>Saves an instance to a file in the workspace folder which can be later opened in Roblox Studio. Possible options (and their default values) can be seen below:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode lua"><code class="sourceCode lua"><a class="sourceLine" id="cb1-1" title="1">DefaultSettings <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">    DecompileMode <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> <span class="co">-- 0 = don&#39;t decompile scripts, 1 = Synapse X Decompiler</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    NilInstances <span class="op">=</span> <span class="kw">false</span><span class="op">,</span> <span class="co">-- save nil instances</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    RemovePlayerCharacters <span class="op">=</span> <span class="kw">true</span><span class="op">,</span> <span class="co">-- ignore players&#39; characters</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    SavePlayers <span class="op">=</span> <span class="kw">false</span><span class="op">,</span> <span class="co">-- saves players and their descendants</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    DecompileTimeout <span class="op">=</span> <span class="dv">10</span><span class="op">,</span> <span class="co">-- process timeout</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    MaxThreads <span class="op">=</span> <span class="dv">3</span><span class="op">,</span> <span class="co">-- the max number of processes that should be running at one time (the higher this value is the faster the decompilation process)</span></a>
+<a class="sourceLine" id="cb1-8" title="8">    DecompileIgnore <span class="op">=</span> <span class="op">{</span><span class="st">&quot;Chat&quot;</span><span class="op">,</span><span class="st">&quot;CoreGui&quot;</span><span class="op">,</span><span class="st">&quot;CorePackages&quot;</span><span class="op">},</span> <span class="co">-- scripts inside these services are saved but not decompiled</span></a>
+<a class="sourceLine" id="cb1-9" title="9">    ShowStatus <span class="op">=</span> <span class="kw">true</span><span class="op">,</span> <span class="co">-- whether to show status text</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    IgnoreDefaultProps <span class="op">=</span> <span class="kw">true</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-11" title="11">    IsolateStarterPlayer <span class="op">=</span> <span class="kw">true</span> <span class="co">-- allows for playing the game in studio right after opening</span></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="op">}</span></a></code></pre></div>
+<p><code>instance</code> can be a table of instances to save multiple instances at once.</p>
+<h3 id="saveplace">saveplace</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>saveplace</b>(<span style = "color:green">string</span> name [, <span style = "color:green">table</span> options])</p>
+</blockquote>
+<p>Equivalent to <code>saveinstance(game, name, options)</code></p>
+<h3 id="decompile">decompile</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>decompile</b>(variant&lt;<span style = "color:green">Instance</span>, <span style = "color:green">function</span>&gt; script, <span style = "color:green">function</span> callback(<span style = "color:green">string</span> result, <span style = "color:green">string</span> error), <span style = "color:green">number</span> timeout = 5)</p>
+</blockquote>
+<p>Attempts to decompile <code>script</code>. If invalid parameters are passed, nil and an error is returned. If not, decompile returns with true and a (Windows) thread is created that spawns an external process and waits for its output. Once the process ends, the callback is called with the result. If the process is unable to start or another error occurs, the callback is called with nil and the error. <strong>WARNING</strong>: A new process is created every time this function is called. Calling decompile too quickly or in excessive amounts may cause some processes to hang or exhaust your computer of resources.</p>
+<h3 id="checkcaller">checkcaller</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>checkcaller</b>()</p>
+</blockquote>
+<p>Returns true if the function calling the function calling checkcaller is an Elysian function.</p>
+<h3 id="setfflag">setfflag</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>setfflag</b>(<span style = "color:green">string</span> fflag, <span style = "color:green">string</span> value)</p>
+</blockquote>
+<p>Sets an FFlag’s value. Returns true if the flag was set succesfully or false if the flag doesn’t exist. For more information on FFlags and how to retrieve their values, see: http://wiki.roblox.com/index.php?title=API:Class/GlobalSettings/GetFFlag</p>
+<h3 id="getreg">getreg</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>getreg</b>()</p>
+</blockquote>
+<p>Returns Lua’s registry (<a href="https://www.lua.org/pil/27.3.2.html">LUA_REGISTRYINDEX</a>).</p>
+<h3 id="getnilinstances">getnilinstances</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>getnilinstances</b>()</p>
+</blockquote>
+<p>Returns a list of nil instances.</p>
+<h3 id="elysianexecute">elysianexecute</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>elysianexecute</b>(<span style = "color:green">string</span> script [, <span style = "color:green">Instance</span> localscript])</p>
+</blockquote>
+<p>Equivalent to executing a script through Elysian’s interface (pressing the execute button, etc). If <code>localscript</code> is provided, the script will be binded/linked to that instance. If not present, a new LocalScript will be created.</p>
+<h3 id="newcclosure">newcclosure</h3>
+<blockquote>
+<p><span style = "color:green">function</span> <b>newcclosure</b>(<span style = "color:green">function</span> f)</p>
+</blockquote>
+<p>Disguises Lua function <code>f</code> as a C function. It is seen as a C function by other scripts and any errors thrown inside <code>f</code> are viewed as coming from the C function, not <code>f</code> (in other words, the existence of <code>f</code> can not be detected by viewing the error message, stack trace, or etc.). <code>f</code> is allowed to yield ( e.g. wait() ) but will resume outside of the function.</p>
+<h3 id="replaceclosure">replaceclosure</h3>
+<blockquote>
+<p><span style = "color:green">function</span> <b>replaceclosure</b>(<span style = "color:green">function</span> target, <span style = "color:green">function</span> replacement)</p>
+</blockquote>
+<p>Replaces a function with another function and returns a clone of the original. Once a function is replaced it cannot be replaced with any other function except for its clone/original. For a better understanding, see <a href="https://pastebin.com/nJSKgYX4">this</a> code. <strong>Warning:</strong> It should be noted that Lua doesn’t like people modifying internal structures and improper or extensive use of this function may cause unexpected crashes or other issues.</p>
+<h3 id="restoreclosure">restoreclosure</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>restoreclosure</b>(<span style = "color:green">function</span> target)</p>
+</blockquote>
+<p>Restores a closure that has been overwritten with <a href="#replaceclosure">replaceclosure</a>. Returns false if the function has not been replaced.</p>
+<h3 id="bit-library">bit library</h3>
+<blockquote>
+<p>functions: bit.tobit, bit.tohex, bit.bnot, bit.band, bit.bor, bit.bxor, bit.lshift, bit.rshift, bit.arshift, bit.rol, bit.ror</p>
+</blockquote>
+<p>Attempts to replicate <a href="http://bitop.luajit.org/api.html">LuaJIT’s bit library</a>.</p>
+<h3 id="getallthreads">getallthreads</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>getallthreads</b>()</p>
+</blockquote>
+<p>Returns an array of all existing Lua threads.</p>
+<h3 id="getthreadobject">getthreadobject</h3>
+<blockquote>
+<p><span style = "color:green">Instance</span> <b>getthreadobject</b>([<span style = "color:green">thread</span> t])</p>
+</blockquote>
+<p>Returns the script associated with a Lua thread. If <code>t</code> is not provided, the current thread is used.</p>
+<h3 id="gettenv">gettenv</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>gettenv</b>([<span style = "color:green">thread</span> t])</p>
+</blockquote>
+<p>Returns a thread’s environment. If <code>t</code> is not provided, the current thread is used.</p>
+<h3 id="getsenv">getsenv</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>getsenv</b>(<span style = "color:green">Instance</span> script)</p>
+</blockquote>
+<p>Searches for a thread associated with <code>script</code> and returns its environment (see init.lua for implementation).</p>
+<h3 id="getlocals">getlocals</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>getlocals</b>(<span style = "color:green">number</span> level)</p>
+</blockquote>
+<p>Returns a Lua function’s local variables. The level parameter represents a function on the callstack, where 1 is the function calling getlocals, 2 is the function calling that function, and so on. The level provided cannot point to an Elysian or C function.</p>
+<p>In <a href="#luau">Luau-enabled</a> games, getlocals returns the function’s stack as an array instead of a dictionary of local names to local variables.</p>
+<h3 id="setlocal">setlocal</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>setlocal</b>(<span style = "color:green">number</span> level, <span style = "color:green">string</span> i, variant v)</p>
+</blockquote>
+<p>Sets local variable <code>i</code> to value <code>v</code> in the function pointed to by <code>level</code> (see <a href="#getlocals">getlocals</a>). Like getlocals, the function cannot be an Elysian or C function. Returns true if the variable was set successfully.</p>
+<p>In <a href="#luau">Luau-enabled</a> games, setlocal requires an integer index for <code>i</code> instead of a string.</p>
+<h3 id="getupvals">getupvals</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>getupvals</b>(variant&lt;<span style = "color:green">number</span>, <span style = "color:green">function</span>&gt; f)</p>
+</blockquote>
+<p>Returns a Lua function’s upvalues. If a number is passed for <code>f</code>, it is interpreted as a level (see <a href="#getlocals">getlocals</a> and <a href="#setlocal">setlocal</a>). The function cannot be an Elysian or C function.</p>
+<p>In <a href="#luau">Luau-enabled</a> games, getupvals returns the function’s upvalues as an array instead of a dictionary of upvalue names to upvalues.</p>
+<h3 id="setupval">setupval</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>setupval</b>(variant&lt;<span style = "color:green">number</span>, <span style = "color:green">function</span>&gt; f, <span style = "color:green">string</span> i, variant v)</p>
+</blockquote>
+<p>Sets upvalue <code>i</code> to value <code>v</code> in function <code>f</code>. If a number is passed for <code>f</code>, it is interpreted as a level (see <a href="#getlocals">getlocals</a> and <a href="#setlocal">setlocal</a>). The function cannot be an Elysian or C function. Returns true if the upvalue was set successfully.</p>
+<p>In <a href="#luau">Luau-enabled</a> games, setupval requires an integer index for <code>i</code> instead of a string.</p>
+<h3 id="getconsts">getconsts</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>getconsts</b>(variant&lt;<span style = "color:green">number</span>, <span style = "color:green">function</span>&gt; f)</p>
+</blockquote>
+<p>Returns a Lua function’s constants. If a number is passed for <code>f</code>, it is interpreted as a level.</p>
+<h3 id="setconst">setconst</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>setconst</b>(variant&lt;<span style = "color:green">number</span>, <span style = "color:green">function</span>&gt; f, <span style = "color:green">number</span> i, variant v)</p>
+</blockquote>
+<p>Sets constant number <code>i</code> to value <code>v</code> in function <code>f</code>. If a number is passed for <code>f</code>, it is interpreted as a level.</p>
+<h3 id="getgc">getgc</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>getgc</b>([<span style = "color:green">boolean</span> nomt])</p>
+</blockquote>
+<p>Returns an array of all existing allocated objects in Lua. This includes strings, functions, threads, userdata, and more across all Roblox and Elysian scripts. Unless <code>nomt</code> is set, the returned table has a metatable with <a href="http://www.lua.org/manual/5.1/manual.html#2.10.2">__mode set to “v”</a>.</p>
+<h3 id="islclosure">islclosure</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>islclosure</b>(<span style = "color:green">function</span> f)</p>
+</blockquote>
+<p>Returns true if <code>f</code> is a Lua function.</p>
+<h3 id="gethui">gethui</h3>
+<blockquote>
+<p><span style = "color:green">Instance</span> <b>gethui</b>()</p>
+</blockquote>
+<p>Returns a hidden renderable container separate from CoreGui, PlayerGui, and et cetera. <a href="https://developer.roblox.com/api-reference/class/ScreenGui">ScreenGuis</a> and <a href="https://developer.roblox.com/api-reference/class/Message">Messages</a> parented to this container will render on top of CoreGui. Although parented to <a href="https://developer.roblox.com/api-reference/class/DataModel">Game</a>, game scripts cannot enumerate Game’s children to find this container or use functions such as <a href="https://developer.roblox.com/api-reference/function/Instance/FindFirstChild">FindFirstChild</a> to find the container or any of its descendants. Objects added to and removed from the container will not fire <a href="https://developer.roblox.com/api-reference/event/Instance/DescendantAdded">DescendantAdded</a> or <a href="https://developer.roblox.com/api-reference/event/Instance/DescendantRemoving">DescendantRemoving</a> signals on Game.</p>
+<h3 id="getbspval">getbspval</h3>
+<blockquote>
+<p><span style = "color:green">string</span> <b>getbspval</b>(<span style = "color:green">Instance</span> object, <span style = "color:green">string</span> property [, <span style = "color:green">boolean</span> base64])</p>
+</blockquote>
+<p>Reads a BinaryString property’s value. Useful for reading conventionally unreadable BinaryString properties such as Terrain.SmoothGrid, PartOperation.PhysicsData, <a href="https://developer.roblox.com/api-reference/class/BinaryStringValue">BinaryStringValue</a>.Value, and so on.</p>
+<h3 id="getnspval">getnspval</h3>
+<blockquote>
+<p>variant <b>getnspval</b>(<span style = "color:green">Instance</span> object, <span style = "color:green">string</span> property)</p>
+</blockquote>
+<p>Returns a property’s value, even if it is unscriptable.</p>
+<h3 id="getpcd">getpcd</h3>
+<blockquote>
+<p><span style = "color:green">string</span> <b>getpcd</b>(<span style = "color:green">Instance</span> union)</p>
+</blockquote>
+<p>Returns a 16-byte hash and binary data corresponding to TriangleMeshPart’s PhysicalConfigData property.</p>
+<h3 id="cloneref">cloneref</h3>
+<blockquote>
+<p><span style = "color:green">Instance</span> <b>cloneref</b>(<span style = "color:green">Instance</span> ref)</p>
+</blockquote>
+<p>Clones a reference to an instance. <code>clone==ref</code> will be false, but both values will point to the same instance.</p>
+<h3 id="md5sum">md5sum</h3>
+<blockquote>
+<p><span style = "color:green">string</span> <b>md5sum</b>(<span style = "color:green">string</span> data)</p>
+</blockquote>
+<p>Returns the MD5 sum of <code>data</code>.</p>
+<h3 id="base64encode">base64encode</h3>
+<blockquote>
+<p><span style = "color:green">string</span> <b>base64encode</b>(<span style = "color:green">string</span> data)</p>
+</blockquote>
+<p>Returns <code>data</code> base64-encoded.</p>
+<h3 id="base64decode">base64decode</h3>
+<blockquote>
+<p><span style = "color:green">string</span> <b>base64decode</b>(<span style = "color:green">string</span> data)</p>
+</blockquote>
+<p>Returns <code>data</code> base64-decoded.</p>
+<h3 id="getunionassetid">getunionassetid</h3>
+<blockquote>
+<p><span style = "color:green">string</span> <b>getunionassetid</b>(<span style = "color:green">Instance</span> union)</p>
+</blockquote>
+<p>Equivalent to <code>getnspval(union, &quot;AssetId&quot;)</code></p>
+<h3 id="getconnections">getconnections</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>getconnections</b>(<span style = "color:green">RBXScriptSignal</span> signal)</p>
+</blockquote>
+<p>Returns a list of Lua and engine connections to <code>signal</code>.</p>
+<h3 id="isluau">isluau</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>isluau</b>()</p>
+</blockquote>
+<p>Returns true if the game is running on Roblox’s new Lua implementation, <a href="#luau">Luau</a>.</p>
+<h3 id="getnamecallmethod">getnamecallmethod</h3>
+<blockquote>
+<p><span style = "color:green">string</span> <b>getnamecallmethod</b>()</p>
+</blockquote>
+<p>Returns the method parameter in the context of a __namecall metamethod. Only applies to <a href="#luau">Luau-enabled</a> games. See init.lua for example usage.</p>
+<h3 id="getelyasset">getelyasset</h3>
+<blockquote>
+<p><span style = "color:green">string</span> <b>getelyasset</b>([<span style = "color:green">string</span> name])</p>
+</blockquote>
+<p>Returns a string in the format <code>rbxasset://&lt;random_string&gt;/&lt;name&gt;</code> that can be used with <a href="https://developer.roblox.com/en-us/articles/Content">Content</a> properties to load custom assets from the workspace folder.</p>
+<h1 id="drawing-library">Drawing Library</h1>
+<h3 id="drawing.new">Drawing.new</h3>
+<blockquote>
+<p>Drawable <b>Drawing.new</b>(<span style = "color:green">string</span> type)</p>
+</blockquote>
+<p>Creates a new drawable object. <code>type</code> must be “Circle”, “Box”, “Line”, or “Text”. See below for more information.</p>
+<h3 id="drawinggetobjects">Drawing::GetObjects</h3>
+<blockquote>
+<p><span style = "color:green">table</span> <b>Drawing:GetObjects</b>()</p>
+</blockquote>
+<p>Returns a list of all drawable objects.</p>
+<h3 id="drawing.defaultfont">Drawing.DefaultFont</h3>
+<blockquote>
+<p>int <b>Drawing.DefaultFont</b></p>
+</blockquote>
+<p>A value between 1 and 21, inclusive. Default <code>21</code>.</p>
+<h3 id="drawing.usecompattransparency">Drawing.UseCompatTransparency</h3>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>Drawing.UseCompatTransparency</b></p>
+</blockquote>
+<p>If true, <code>0</code> will indicate transparency and <code>1</code> will indicate opaqueness when setting a drawable’s <code>Transparency</code> property.</p>
+<h2 id="drawable-base-class">Drawable (Base Class)</h2>
+<h3 id="properties">Properties</h3>
+<blockquote>
+<p><span style = "color:green">string</span> <b>ClassName</b> [readonly]</p>
+</blockquote>
+<p>The type of drawable.</p>
+<blockquote>
+<p>Vector2 <b>Position</b></p>
+</blockquote>
+<p>The position of the drawable. A position of (0, 0) marks the top left corner of the screen.</p>
+<blockquote>
+<p>Color3 <b>Color</b></p>
+</blockquote>
+<p>The color of the drawable.</p>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>Visible</b></p>
+</blockquote>
+<p>The drawable’s visibility.</p>
+<blockquote>
+<p>int <b>ZIndex</b></p>
+</blockquote>
+<p>The drawable’s layer. This number can be 0 to 25. Drawables on higher layers will render over drawables on lower layers.</p>
+<blockquote>
+<p>float <b>Transparency</b></p>
+</blockquote>
+<p>A value from 0 to 1. A value of 1 means the drawable is completely transparent.</p>
+<h3 id="functions">Functions</h3>
+<blockquote>
+<p><span style = "color:green">void</span> <b>Drawable:Destroy</b>()</p>
+</blockquote>
+<p>Destroys a drawable. Further access to the object will throw an error.</p>
+<blockquote>
+<p><span style = "color:green">void</span> <b>Drawable:Remove</b>()</p>
+</blockquote>
+<p>Equivalent to <code>drawable:Destroy()</code></p>
+<blockquote>
+<p>Drawable <b>Drawable:Clone</b>()</p>
+</blockquote>
+<p>Constructs a new drawable with equal properties.</p>
+<h2 id="circle">Circle</h2>
+<h3 id="properties-1">Properties</h3>
+<blockquote>
+<p>float <b>Radius</b></p>
+</blockquote>
+<p>The circle’s radius.</p>
+<blockquote>
+<p>int <b>Segments</b></p>
+</blockquote>
+<p>The number of segments that make up the circle. Default <code>20</code>.</p>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>Filled</b></p>
+</blockquote>
+<p>Whether or not the circle is filled. Default <code>false</code>.</p>
+<blockquote>
+<p>float <b>Thickness</b></p>
+</blockquote>
+<p>The circle’s thickness. Applies only when <code>Filled</code> is <code>false</code>.</p>
+<h2 id="box">Box</h2>
+<h3 id="properties-2">Properties</h3>
+<blockquote>
+<p>Vector2 <b>Size</b></p>
+</blockquote>
+<p>The box’s size.</p>
+<blockquote>
+<p>float <b>Rounding</b></p>
+</blockquote>
+<p>The roundness of the box’s corners. Default <code>0</code>.</p>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>Filled</b></p>
+</blockquote>
+<p>Whether or not the box is filled. Default <code>false</code>.</p>
+<blockquote>
+<p>float <b>Thickness</b></p>
+</blockquote>
+<p>The box’s thickness. Applies only when <code>Filled</code> is <code>false</code>.</p>
+<h2 id="line">Line</h2>
+<h3 id="properties-3">Properties</h3>
+<blockquote>
+<p>Vector2 <b>EndPosition</b></p>
+</blockquote>
+<p>The line’s end position.</p>
+<blockquote>
+<p>float <b>Thickness</b></p>
+</blockquote>
+<p>The line’s thickness.</p>
+<h2 id="text">Text</h2>
+<h3 id="properties-4">Properties</h3>
+<blockquote>
+<p>float <b>FontSize</b></p>
+</blockquote>
+<p>Font size.</p>
+<blockquote>
+<p><span style = "color:green">string</span> <b>Text</b></p>
+</blockquote>
+<p>The string to display.</p>
+<blockquote>
+<p>float <b>WrapWidth</b></p>
+</blockquote>
+<p>If greater than 0, the maximum width, in pixels, before text is wrapped. Default <code>0</code>.</p>
+<blockquote>
+<p>int <b>Font</b></p>
+</blockquote>
+<p>A value between 0 and 21, inclusive. A value of 0 indicates a default font controlled by the <code>Drawing.DefaultFont</code> property. Fonts for values 1 to 20 can be found <a href="https://developer.roblox.com/en-us/api-reference/enum/Font">here</a>.</p>
+<blockquote>
+<p>Vector2 <b>TextBounds</b> [readonly]</p>
+</blockquote>
+<p>The width and height of the text.</p>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>Outline</b></p>
+</blockquote>
+<p>Indicates whether the text is outlined.</p>
+<blockquote>
+<p>Color3 <b>OutlineColor</b></p>
+</blockquote>
+<p>The outline’s color.</p>
+<h1 id="luau">Luau</h1>
+<p>Luau is a custom, speedy Lua implementation created by Roblox. It was first spotted in early April of 2019 before being <a href="https://devforum.roblox.com/t/faster-lua-vm-studio-beta/298659">publicly announced</a> by Roblox in late June. Luau does not change Lua’s syntax or behavior but implements a much faster runtime using optimizations in the parser and virtual machine.</p>
+<h3 id="elysian-support-v3.3.0-developer-notes">Elysian Support (v3.3.0+) &amp; Developer Notes</h3>
+<ul>
+<li>Elysian’s Luau support includes most, but not all, of Luau’s available optimizations.</li>
+<li>Luau bytecode does not include local or upvalue name information. As a result, <a href="#getlocals">getlocals</a>, <a href="#setlocal">setlocal</a>, <a href="#getupvals">getupvals</a>, and <a href="#setupval">setupval</a> now require indices (integers) instead of names (strings) in Luau-enabled games.</li>
+<li>One Luau optimization removes the method parameter of the __namecall metamethod. In Luau-enabled games, this parameter must now be obtained via the <a href="#getnamecallmethod">getnamecallmethod</a> function.</li>
+</ul>
+<h1 id="rbxscriptsignal-extensions"><a href="https://developer.roblox.com/api-reference/datatype/RBXScriptSignal">RBXScriptSignal</a> Extensions</h1>
+<h2 id="properties-5">Properties</h2>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>Scriptable</b> [readonly]</p>
+</blockquote>
+<p>Determines whether or not a signal is scriptable. Calling Connect or Wait on non-scriptable signals has no effect.</p>
+<h2 id="functions-1">Functions</h2>
+<blockquote>
+<p><span style = "color:green">RBXScriptConnection</span> <b>RBXScriptSignal:Connect</b>(<span style = "color:green">function</span> func)</p>
+</blockquote>
+<p>In Elysian, Connect works as normal but can also register connections to non-scriptable signals. A list of non-scriptable/internal signals will appear here in the future.</p>
+<blockquote>
+<p><span style = "color:green">table</span> <b>RBXScriptSignal:GetConnections</b>()</p>
+</blockquote>
+<p>Equivalent to <code>getconnections(signal)</code></p>
+<h1 id="rbxscriptconnection-extensions"><a href="https://developer.roblox.com/api-reference/datatype/RBXScriptConnection">RBXScriptConnection</a> Extensions</h1>
+<h2 id="properties-6">Properties</h2>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>LuaConnection</b> [readonly]</p>
+</blockquote>
+<p>Determines whether or not the connection is attached to a Lua function.</p>
+<blockquote>
+<p><span style = "color:green">boolean</span> <b>Enabled</b></p>
+</blockquote>
+<p>Determines whether or not the connection is enabled. Disabled connections will not fire. Both Lua and engine connections can be disabled. Anti-AFK can now by achieved with a few lines of code:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode lua"><code class="sourceCode lua"><a class="sourceLine" id="cb2-1" title="1"><span class="cf">for</span> i<span class="op">,</span> v <span class="kw">in</span> <span class="fu">pairs</span><span class="op">(</span>game<span class="op">:</span>GetService<span class="st">&quot;Players&quot;</span><span class="op">.</span>LocalPlayer<span class="op">.</span>Idled<span class="op">:</span>GetConnections<span class="op">())</span> <span class="cf">do</span></a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="cf">if</span> <span class="kw">not</span> v<span class="op">.</span>LuaConnection <span class="cf">then</span></a>
+<a class="sourceLine" id="cb2-3" title="3">        v<span class="op">.</span>Enabled <span class="op">=</span> <span class="kw">false</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="cf">end</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="cf">end</span></a></code></pre></div>
+<p>This works by disabling a connection created by Roblox’s engine responsible for kicking the client when the user has been idle for more than 20 minutes.</p>
+<h2 id="functions-2">Functions</h2>
+<blockquote>
+<p><span style = "color:green">function</span> <b>RBXScriptConnection:GetFunction</b>()</p>
+</blockquote>
+<p>Returns a connection’s associated Lua function or nil if the connection is not a Lua connection or the function belongs to another Lua instance (corescript state, etc.)</p>
+<blockquote>
+<p><span style = "color:green">void</span> <b>RBXScriptConnection:GetThread</b>()</p>
+</blockquote>
+<p>Returns a connection’s associated Lua thread or nil if the connection is not a Lua connection or the thread belongs to another Lua instance (corescript state, etc.)</p>
+</body>
+</html>

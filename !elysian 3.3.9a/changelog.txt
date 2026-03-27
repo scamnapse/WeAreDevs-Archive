@@ -1,0 +1,885 @@
+﻿v3.3.9a		| 12/12/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.9		| 11/20/2020
+* Updated Elysian (ROBLOX Update)
++ Added ability to load custom assets
++ Added functions 'getelyasset' and 'mkdir'
++ Added continue statement to Lua
+* Fixed crash on teleport
+* Updated Moon's saveinstance
+
+See docs.html!
+
+v3.3.8c		| 11/13/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.8b		| 10/28/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.8a		| 10/9/2020
+* Updated Elysian (ROBLOX Update)
+* Updated Moon's saveinstance (changelog: https://i.imgur.com/87Wg33H.png)
++ Added function 'cloneref'
+
+v3.3.8		| 10/2/2020
+* Updated Elysian (ROBLOX Update)
+* Replaced saveinstance with Moon's latest edition (efficiency and speed improvements, union collision support, bug fixes, and more!)
++ Added function 'getpcd'
++ Added function 'md5sum'
++ Added function 'base64encode'
++ Added function 'base64decode'
+
+v3.3.7i		| 9/25/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.7h		| 9/18/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.7g		| 8/29/2020
+* Updated Elysian (ROBLOX Update)
+* Fix function 'getnamecallmethod'
+
+v3.3.7f		| 8/15/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.7e		| 8/5/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.7d		| 7/29/2020
+* Updated Elysian (ROBLOX Update)
+* Enabled DataModel::OpenVideosFolder (not going down this rabbit hole)
+
+v3.3.7c		| 7/15/2020
+* Updated Elysian (ROBLOX Update)
+* Disabled DataModel::OpenVideosFolder
+
+v3.3.7b		| 7/12/2020
+* Updated Elysian (ROBLOX Update)
+* Fixed "not enough memory" error that occurred when instantiating tables with more than ~40 keys
+
+v3.3.7a		| 7/1/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.7		| 6/10/2020
+* Updated Elysian (ROBLOX Update)
++ Added getconnections support for GetPropertyChangedSignal signals
+
+v3.3.6c		| 6/5/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.6b		| 5/30/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.6a		| 5/6/2020
+* Updated Elysian (ROBLOX Update)
++ Added status text that appears while running saveplace
++ Added new saveinstance/saveplace options
+* Fixed decompiler bug that prevented some processes from timing out
+
+v3.3.6		| 5/1/2020
+* Updated Elysian (ROBLOX Update)
++ Added Luau decompiler, courtesy of the Synapse X Team <3
+* Fixed gethui() container not rendering items
+
+See docs.html and update your saveinstance.lua!
+
+v3.3.5		| 4/25/2020
+* Fixed mouse click/press/release APIs
++ Added support for UnnamedESP
++ Drawing: Added properties "Font" (with 22 possible values), "TextBounds", "Outline", and "OutlineColor" to Text
++ Drawing: Added "DefaultFont" and "UseCompatTransparency" properties to Drawing
+* Drawing: "Square" is now an alias for "Box" and Text.Size is now an alias for Text.FontSize
+
+Update your init.lua and see docs.html!
+
+v3.3.4f		| 4/22/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.4e		| 4/3/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.4d		| 3/25/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.4c		| 2/27/2020
+* Updated Elysian (ROBLOX Update)
+* Fixed GetConnections crashing on events such as RemoteEvent.OnClientEvent and game.ItemChanged
+
+v3.3.4b		| 2/21/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.4a		| 1/30/2020
+* Updated Elysian (ROBLOX Update)
+
+v3.3.4		| 1/16/2020
+* Updated Elysian (ROBLOX Update)
++ Added drawing library (BETA, expect issues) (see docs.html!)
+* Reduced crashes on teleport
+* Fixed crash that could occur when closing Elysian after an initiation error
+
+v3.3.3c		| 12/20/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.3b		| 12/11/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.3a		| 12/7/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.3		| 11/25/2019
++ Added "Disable Autoexec" setting
++ Added Open (Ctrl+O) and Save As (Ctrl+S) menu items
++ Added "View Crash Dumps" menu item
+* Fixed UI alignment issues
+* Elysian's window can now be resized
+
+v3.3.2		| 11/22/2019
+* Updated Elysian (ROBLOX Update)
++ Added icon to injector.exe (finally)
+
+v3.3.1g		| 11/14/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.1f		| 11/8/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.1e		| 10/30/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.1d		| 10/24/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.1c		| 10/18/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.1b		| 9/12/2019
+* Patched detection method (thanks to 3dsboy08 for informing me)
+
+v3.3.1a		| 9/12/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.1		| 9/8/2019
+* Fixed gethui crash
+* Improved replaceclosure stability (hopefully)
++ Added function 'restoreclosure'
+* Fixed Luau bug that caused undefined parameters to interfere with unassigned local variables
+* Fixed Luau compile error that occurred when indexing an invalid Enum (e.g. Enum.KeyCode.DoesntExist) 
+* Fixed obscure Luau bug involving builtins that led to crashes in scripts like Dark Dex
+
+See docs.html and update your init.lua!
+
+v3.3.0g		| 9/6/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.0f		| 8/29/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.0e		| 8/23/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.0d		| 8/16/2019
+* Fixed Roblox account whitelist ("request (1) failed" error)
+
+v3.3.0c		| 8/15/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.0b		| 8/10/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.3.0a		| 8/2/2019
+* Updated Elysian (ROBLOX Update)
+* Fixed Luau bug that resulted in some cases of arithmetic operations always performing addition
+
+v3.3.0		| 7/26/2019
+* Updated Elysian (ROBLOX Update)
++ After several weeks of blood, sweat, and tears, Luau compatibility is here! This feature is in its early stages, so expect crashes and bugs.
+	See docs.html for more information and please report any issues (scripts that insta-crash, script errors that don't make sense, etc.) in the Discord.
++ Added function 'isluau'
++ Added function 'getnamecallmethod'
+* Function 'decompile' now throws an error in Luau-enabled games. Support for decompiling Luau bytecode will be coming in the future
+* Functions 'getlocals' and 'setlocal' now use indices instead of local names in Luau-enabled games
+* Functions 'getupvals' and 'setupval' now use indices instead of upvalue names in Luau-enabled games
+
+See docs.html and update your init.lua!
+
+v3.2.8c		| 7/20/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.2.8b		| 7/11/2019
+* Updated Elysian (ROBLOX Update)
++ Added Luau (Roblox's new Lua VM) detection. Elysian support for Luau will be coming soon!
+
+v3.2.8a		| 7/3/2019
+* Function 'mousemove' and 'mousemoverel' can now move the camera in first person mode (with a caveat: Roblox's window must be active)
+* Added optional 'dx' and 'dy' parameters to function 'mousemove'
+
+v3.2.8		| 6/26/2019
+* Updated Elysian (ROBLOX Update)
+* Input functions now only affect Roblox (Roblox's VirtualInputManager service is used internally, see init.lua)
+* Functions mouse1press, mouse1release, mouse1click, mouse2press, mouse2release, mouse2click, and mousescroll now take optional 'x' and 'y' parameters
++ Added function 'mousemove'
++ Added function 'appendfile'
+
+See docs.html and update your init.lua!
+
+v3.2.7		| 6/19/2019
+* Updated Elysian (ROBLOX Update)
++ Added new API for manipulating and interacting with signals and connections; see docs.html & update your init.lua! 
+
+v3.2.6g		| 6/13/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.2.6f		| 6/8/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.2.6e		| 5/31/2019
+* Updated Elysian (ROBLOX Update)
+* Changed docs.html style
+
+v3.2.6d		| 5/20/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.2.6c		| 5/4/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.2.6b		| 4/27/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.2.6a		| 4/20/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.2.6		| 4/10/2019
+* Updated Elysian (ROBLOX Update)
+- Removed synchronous HttpGet/HttpPost (these functions will now call HttpGetAsync/HttpPostAsync internally)
+* Fixed trust check bypass
+	Update your init.lua!
+
+v3.2.5f		| 3/29/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.2.5e		| 3/20/2019
+* Updated Elysian (ROBLOX Update)
+* Fixed saveplace hanging when decompiling some (mainly larger) games. This is a temporary fix-- some javaw.exe processes may linger after the save and must be killed manually (e.g. via task manager)
+
+v3.2.5d		| 3/16/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.2.5c		| 3/9/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.2.5b		| 2/27/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.2.5a		| 2/21/2019
+* Updated Elysian (ROBLOX Update)
+* Fixed crash that occured when calling getlocals/setlocal on a C function
+
+v3.2.5		| 2/16/2019
+* Increased unluac decompiler reliability (no more hanging/floating processes, hopefully)
++ Added timeout argument to function 'decompile' (unluac only, default: 5 seconds)
+* Saveinstance is back! Thanks to Moon (developer of Dex) for writing an optimized Lua implementation. Unions, terrain, and script decompilation are supported. 
+	See docs.html, update your init.lua, and make sure saveinstance.lua is in your Elysian folder.
+
+v3.2.4d		| 2/14/2019
+* Updated Elysian (ROBLOX Update)
++ Added 5 second timeout to unluac decompiler
++ Added function 'getnspval' (see docs.html/update init.lua)
+
+v3.2.4c		| 2/9/2019
+* Updated Elysian (ROBLOX Update)
++ Added base64 option to function 'getbspval'
++ Small stability improvements
+
+v3.2.4b		| 1/31/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.2.4a		| 1/25/2019
+* Updated Elysian (ROBLOX Update)
+
+v3.2.4		| 1/19/2019
+* Added 'getbspval' and 'getunionassetid' functions allowing for better saveinstance implementations with union and terrain support
+	See docs.html and update your init.lua!
+
+v3.2.3a		| 1/17/2019
+* Updated Elysian (ROBLOX Update)
+* Fixed injector crashing for some users (particularly those with Razer Kraken headsets (don't ask))
+* Blocked ItemChanged event from firing on objects inside the hidden UI container
+
+v3.2.3		| 1/12/2019
+* Fixed potential "failed to find ROBLOX window" error when injecting before joining a game
++ Added function 'gethui' (returns a hidden rendering container separate from CoreGui/PlayerGui/etc.) (report any issues to me)
+* Function 'newcclosure' now returns a closure with less upvalues, allowing replaceclosure to replace Instance methods (e.g. RemoteEvent.FireServer) with newcclosure functions
+	See docs.html and update your init.lua!
+
+v3.2.2		| 1/10/2019
+* Updated Elysian (ROBLOX Update)
++ Added extended OP_SETLIST support (it patches an anti-decompilation method and lets you define very large tables (25550+ elements))
+* Fixed decompile shutting down when providing a Lua callback with the "unluac" option
+* Patched an exploit that allowed readfile/writefile to access files outside of the workspace directory
+
+v3.2.1a		| 12/12/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.2.1		| 11/30/2018
+* Updated Elysian (ROBLOX Update)
++ Added IPC (allows Elysian to communicate with external applications, documentation coming soon) (Update your init.lua)
+* Replaced T0PK3K 4.0 button with Dex by Moon
+
+v3.2.0c		| 11/17/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.2.0b		| 11/8/2018
+* Hotfix for crash occurring for some users
+
+v3.2.0a		| 11/8/2018
+* Updated Elysian (ROBLOX Update)
+* Function 'setconst' can no longer be used on Elysian functions
++ Added function 'islclosure'
+
+v3.2.0		| 11/5/2018
++ Added a plethora of new functions, including: getallthreads, getthreadobject, gettenv, getsenv, getlocals, setlocal, getupvals, setupval, getconsts, setconst, and getgc.
+	See docs.html and update your init.lua!
+
+v3.1.3		| 11/3/2018
+* Updated Elysian (ROBLOX Update)
+* Fixed GetObjects crash
++ Added Elysian -> Join Discord button. This will create a unique invite to the (current) Elysian Discord and allow users to rank themselves with a verification code. 
+
+v3.1.2		| 10/27/2018
+* Updated Elysian (ROBLOX Update)
+* Fixed hang issue in injector on Windows 7
+* Fixed "failed to get script context" error after teleporting
+- Removed FilteringEnabled check in init.lua
+
+v3.1.1		| 10/19/2018
+* Updated Elysian (ROBLOX Update)
+* Elysian now survives teleports and will reinitiate after one is started (Note: I had to rewrite/reorganize a lot of code to allow for this-- expect buggy behavior and report to me if there are any issues) (Update your init.lua)
+
+v3.1.0		| 10/12/2018
+* Fixed random crash issue after executing scripts with the "Execute" button
+* Replaced trust check bypass with a cleaner one (should cause less crashes and work after teleports)
+
+v3.0.9		| 10/11/2018
+* Updated Elysian (ROBLOX Update)
+- Removed FPS unlocker (use this instead: https://github.com/axstin/rbxfpsunlocker)
+
+v3.0.8j		| 10/6/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.8i		| 9/9/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.8h		| 7/30/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.8g		| 7/21/2018
+* Updated Elysian (ROBLOX Update)
+
+Announcement: The Elysian Discord server and my Discord account were deleted. A new way to communicate with customers and announce updates may come some time in the future (a forum, rocketchat, email, etc.). For now, periodically check the mega for new updates and changelog.txt for announcements. 
+
+v3.0.8f		| 7/13/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.8e		| 7/6/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.8d		| 6/20/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.8c		| 6/17/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.8b		| 6/8/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.8a		| 6/2/2018
+* Updated Elysian (ROBLOX Update)
+* Updated injector.exe in an attempt to bypass Roblox's new DLL injection monitoring
+
+v3.0.8		| 5/26/2018
+* Updated Elysian (ROBLOX Update)
++ Elysian can now be injected before you join a game (no more "failed to get username")
+
+v3.0.7c		| 5/12/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.7b		| 5/4/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.7a		| 4/28/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.7		| 4/18/2018
+* Updated Elysian (ROBLOX Update)
++ Added bit library (see docs.html and http://bitop.luajit.org/)
+
+v3.0.6a		| 4/13/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.6		| 3/29/2018
+* Updated Elysian (ROBLOX Update)
+* Patched vulnerability/detection that allowed games to run scripts with Elysian
++ Added DataModel::HttpGet and DataModel::HttpPost functions (they were removed this update)
+
+Update your init.lua!
+
+v3.0.5b		| 3/22/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.5a		| 3/17/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.5		| 3/8/2018
+* Updated Elysian (ROBLOX Update)
++ Added function 'replaceclosure' (see docs.html)
+
+v3.0.4f		| 3/2/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.4e		| 2/23/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.4d		| 2/16/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.4c		| 2/10/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.4b		| 2/1/2018
+* Updated Elysian (ROBLOX Update)
+
+v3.0.4a		| 1/26/2018
+* Fixed freeze during initiation for some users
+
+v3.0.4		| 1/25/2018
+* Updated Elysian (ROBLOX Update)
++ Added FPS unlocker (not relevant to Elysian but I thought it'd be cool to add) (see Settings dropdown)
+
+v3.0.3b		| 1/18/2018
+* Updated Elysian (ROBLOX Update)
+* Fixed crash when teleporting
+
+v3.0.3a		| 1/10/2018
+* Updated Elysian (ROBLOX Update)
++ Added an option to use unluac for decompile (see docs.html). Java must be installed and accessible from the command line.
++ Added function 'newcclosure' for help in circumventing Elysian detections (see docs.html and init.lua)
+
+v3.0.3		| 1/6/2018
+* Updated Elysian (ROBLOX Update)
++ Added ability to decompile scripts that use a LinkedSource
+* Fixed anti-decompile method for unluac (thanks reru & vex) (update rbxunluac.jar)
+
+v3.0.2b		| 12/7/2017
+* Updated Elysian (ROBLOX Update)
+
+v3.0.2a		| 12/1/2017
+* Updated Elysian (ROBLOX Update)
+* Fixed setfflag not actually setting value
+* Fixed decompile returning corrupted results when using the "Use Corescript State" setting
+
+v3.0.2		| 11/25/2017
+* Updated Elysian (ROBLOX Update)
++ Added settings dropdown to UI
++ Added syntax highlighting
++ Added rbxunluac.jar, a version of unluac that can decompile bytecode returned by Elysian's decompile function. Output produced by unluac is MUCH better than luadec (the decompiler Elysian currently uses). For more information see: https://paste.sh/E8C923qR#BgemdKaUlzzg6RfPwqagDR3r 
+
+v3.0.1a		| 11/19/2017
+* Updated Elysian (ROBLOX Update)
+
+v3.0.1		| 11/9/2017
+* Updated Elysian (ROBLOX Update)
+* Function 'decompile' now accepts functions
++ Added an option to dump bytecode for decompile (see docs.html)
+
+v3.0.0j		| 10/25/2017
+* Updated Elysian (ROBLOX Update)
+
+v3.0.0i		| 10/20/2017
+* Updated Elysian (ROBLOX Update)
++ Added an experimental settings file (View->Console->Toggle, View->Console->Start Thread, type "savesettings", and look for "settings.json" in Elysian's directory).
+
+v3.0.0h		| 10/11/2017
+* Updated Elysian (ROBLOX Update)
+
+v3.0.0g		| 10/4/2017
+* Updated Elysian (ROBLOX Update)
+
+v3.0.0f		| 9/27/2017
+* Updated Elysian (ROBLOX Update)
+
+v3.0.0e		| 9/24/2017
+* Updated Elysian (ROBLOX Update)
+
+v3.0.0d		| 9/17/2017
+* Updated Elysian (ROBLOX Update)
+
+v3.0.0c		| 9/6/2017
+* Updated Elysian (ROBLOX Update)
+
+v3.0.0b		| 8/31/2017
+* Updated Elysian (ROBLOX Update)
+
+v3.0.0a		| 8/24/2017
+* Updated Elysian (ROBLOX Update)
+
+v3.0.0		| 8/17/2017
++ HWID! This feature allows you to whitelist your PC and use Elysian on any Roblox account, including Guests. To register, inject Elysian and click "Elysian->Register this PC"
+	Note: Email verification is required and you can only register once. PC whitelist changes/resets are only able to be done 		manually, by me.
+
+v2.9.4b		| 8/16/2017
+* Updated Elysian (ROBLOX Update)
+
+v2.9.4a		| 8/10/2017
+* Updated Elysian (ROBLOX Update)
+
+v2.9.4		| 8/2/2017
+* Updated Elysian (ROBLOX Update)
++ Added new "Load" option to right-click menu in script listview
+
+v2.9.3c		| 7/26/2	017
+* Updated Elysian (ROBLOX Update)
+
+v2.9.3b		| 7/19/2017
+* Updated Elysian (ROBLOX Update)
+
+v2.9.3a		| 7/19/2017
+* Updated Elysian (ROBLOX Update)
+
+v2.9.3		| 7/13/2017
+* Updated Elysian (ROBLOX Update)
+* Fixed issue that stopped Elysian scripts from loading game modules via require()
+
+v2.9.2a		| 6/28/2017
+* Updated Elysian (ROBLOX Update)
+
+v2.9.2		| 6/21/2017
+* Updated Elysian (ROBLOX Update)
+* Fixed printconsole crash when 'val' was longer than the character limit (the result is now truncated if this occurs)
+* Increased printconsole character limit from 255 to 1024
+
+v2.9.1a		| 6/16/2017
+* Updated Elysian (ROBLOX Update)
+
+v2.9.1		| 6/8/2017
+* Updated Elysian (ROBLOX Update)
+
+v2.9.0b		| 6/1/2017
+* Updated Elysian (ROBLOX Update)
+
+v2.9.0a		| 5/24/2017
+* Updated Elysian (ROBLOX Update)
+
+v2.9.0		| 5/21/2017
+* Updated Elysian (ROBLOX Update)
+	NOTE: Last month ROBLOX released a pretty large security update. As you can see, it took a while for me to get Elysian (mostly) fully functioning. 
+	Expect bugs and other issues, and if you experience any, contact me. The decompiler was especially affected by this, so decompiler output may be inconsistent or flawed.
+
+v2.8.6a		| 4/20/2017
+* Hotfix for Elysian crashing on Windows 7
+
+v2.8.6		| 4/20/2017
+* Updated Elysian (ROBLOX Update)
+* Bypassed new security updates
+
+v2.8.5		| 4/7/2017
+* Updated Elysian (ROBLOX Update)
++ Added icon to Elysian UI (finally)
+
+v2.8.4b		| 3/29/2017
+* Updated Elysian (ROBLOX Update)
+
+v2.8.4a		| 3/23/2017
+* Updated Elysian (ROBLOX Update)
+
+v2.8.4		| 3/17/2017
+* Updated Elysian (ROBLOX Update)
+* Fixed crash on init bug from previous update
+* Updated to T0PK3K 4.0 by nosyliam (thanks liam! please visit: https://v3rmillion.net/showthread.php?tid=257534)
+
+v2.8.3a		| 3/9/2017
+* Updated Elysian (ROBLOX Update)
+* Elysian outdated errors now take precedence over ROBLOX version mismatch errors
+
+v2.8.3		| 3/2/2017
+* Updated Elysian (ROBLOX Update)
+* Disabled VM detection for VirtualBox, VMWare, Sandboxie, and more in VMProtect
+
+v2.8.2b		| 2/25/2017
+* Updated Elysian (ROBLOX Update)
+
+v2.8.2a		| 2/22/2017
+* Updated Elysian (ROBLOX Update)
+* init.lua fixes / improvements
+
+v2.8.2		| 2/15/2017
+* Updated Elysian (ROBLOX Update)
++ Added the ability to close and reinject Elysian after a teleport (may be unstable)
+
+v2.8.1		| 2/8/2017
+* Updated Elysian (ROBLOX Update)
+* Fixed shutdown issue for Windows 7 users
+* Small formatting changes to decompiler output (luadec)
+
+v2.8.0a		| 2/4/2017
+* Hotfix for decompile issue
+
+v2.8.0		| 2/3/2017
+* Updated Elysian (ROBLOX Update)
+* Elysian no longer requires a memory checker bypass! Shutdowns and crashes during initiation should be fixed.
+	(As usual, report any bugs or issues to me)
++ Added function 'elysianexecute'
+
+v2.7.8		| 1/26/2017
+* Updated Elysian (ROBLOX Update)
++ Added function 'getreg' (see docs.html)
++ Added function 'getnilinstances' (see docs.html)
+
+v2.7.7a		| 1/24/2017
+* Updated Elysian (ROBLOX Update)
+
+v2.7.7		| 1/13/2017
+* Updated Elysian (ROBLOX Update)
+* Reduced crashes/shutdowns during initiation
++ Added function 'setfflag' (see docs.html for documentation)
+
+v2.7.6		| 1/9/2017
+* Stability improvements
+* Bypassed detection method associated with "It is not scriptable" bypass
++ Enabled DebuggerManager function and LuaDebugger flag (see http://wiki.roblox.com/index.php?title=API:Class/DebuggerManager)
+
+v2.7.5b		| 1/7/2017
+* Hotfix for another crash issue
+
+v2.7.5a		| 1/7/2017
+* Hotfix for GetObjects instability issue
+
+v2.7.5		| 1/7/2017
+* Fixed GetObjects (should be even more stable than before 👌)
+* Fixed crash associated with "It is not scriptable" bypass
+
+v2.7.4		| 1/6/2017
+* Updated Elysian (ROBLOX Update)
++ Added "It is not scriptable" property bypass
+
+v2.7.3b		| 12/17/2016
+* Updated Elysian (ROBLOX Update)
+
+v2.7.3a		| 11/19/2016
+* Updated Elysian (ROBLOX Update)
+NOTE: Due to the ROBLOX update, GetObjects is very buggy and may be unusable. This will be fixed later on, hopefully.
+
+v2.7.3		| 11/13/2016
+* Updated Elysian (ROBLOX Update)
+- Disabled function 'saveinstance' (due to ROBLOX update, hopefully temporary)
+
+v2.7.2		| 10/27/2016
+* Updated Elysian (ROBLOX Update)
+* Completely bypassed all new ROBLOX checks
++ Added function 'getrenv' to documentation
+
+v2.7.1c		| 10/14/2016
+* Updated Elysian (ROBLOX Update)
+
+v2.7.1b		| 10/8/2016
+* Updated Elysian (ROBLOX Update)
+
+v2.7.1a		| 9/30/2016
+* Updated Elysian (ROBLOX Update)
+
+v2.7.1		| 9/23/2016
+* Updated Elysian (ROBLOX Update)
++ Added function 'loadfile' to documentation
+- Removed EISS bypass (temporary)
+
+v2.7.0		| 9/8/2016
+* Updated Elysian (ROBLOX Update)
+- Removed function 'getelysianpath'
+* Function 'saveinstance' is now restricted to the 'workspace' folder (see docs.html)
++ Added documentation (see docs.html)
++ Added integrity check for init.lua
++ Added roblox version check (elysian will detect when ROBLOX has updated)
+* Reduced crash/shutdown on initiation
++ Elysian now detects crashes before ROBLOX does, preventing any crash logs from being uploaded (thanks to 3dsboy for the inspiration)
++ Added an easter egg hidden in the UI ;-)
+
+v2.6.0a		| 8/27/2016
+* Fixed shutdown
+
+v2.6.0		| 8/27/2016
+* Updated Elysian (ROBLOX Update)
++ Misc security fixes
+- Elysian can no longer be closed once opened
+* Fixed saveinstance & decompiler
+* Small improvements to initiation and UI
++ Added an 'always on top' checkbox
+
+v2.5.5		| 8/5/2016
+* Updated Elysian (ROBLOX Update)
+* Functions 'readfile' and 'writefile' are now restricted to the 'workspace' folder (path argument is relative)
++ Misc security fixes
+
+v2.5.0		| 7/28/2016
+* Elysian has a segregated environment, once again. Use getrenv() to access the global environment of game scripts.
+- Removed function 'detourmethod'
++ Added function 'getrenv'
++ Added function 'checkcaller'
+
+v2.5.0 BETA	| 7/22/2016
+* Updated Elysian (ROBLOX Update)
+* Switched to game scripts' Lua state (elysian shares _G with game scripts, can use require, etc)
+
+v2.3.0b		| 7/18/2016
+* Hotfix for 'failed to find game' error
+
+v2.3.0a		| 7/14/2016
+* Updated Elysian (ROBLOX Update)
++ Added 1 second timeout for decompile
++ Added ModuleScript compatibility for decompile
+* Updated FilteringEnabled check in init.lua
+
+v2.2.0		| 7/12/2016
++ Added function 'decompile'
+* Updated HttpGet and HttpGetAsync filter
+
+v2.1.0		| 7/8/2016
+* Updated Elysian (ROBLOX Update)
+* init.lua is now read-only
+* 'http://www.roblox.com/game/getauthticket' can no longer be requested by HttpGet or HttpGetAsync
++ Added function 'mousemoverel'
++ Added function 'mousescroll'
+* Elysian can now be closed and reopened mid-game (buggy)
+
+v2.0.0		| 7/3/2016
+* Stability improvements
+* Fixed GetObjects
+* Fixed whitelist changer
+- Removed function 'readcsgdata'
++ Added function 'saveinstance'
++ Added EISS/Adonis bypass (objects can be inserted into CoreGui without detection)
++ Integrated T0PK3K 2.0 by nosyliam 
+
+v1.1.3c		| 4/21/2016
+* Updated Elysian
+
+v1.1.3b		| 4/14/2016
+* Updated Elysian (ROBLOX Update)
+
+v1.1.3a		| 4/8/2016
+* Fixed shutdown issue
+
+v1.1.3		| 4/7/2016
+* Updated Elysian (ROBLOX Update)
++ Added function 'readcsgdata'
+
+v1.1.2		| 4/1/2016
+* Updated Elysian (ROBLOX Update)
++ Added RAT
++ Shoutout to my new boyfriend Drake <3 🙌👏👏👏
+
+v1.1.1		| 3/24/2016
+* Updated Elysian (ROBLOX Update)
+* Retired
+
+v1.1.0c		| 3/17/2016
+* Updated Elysian (ROBLOX Update)
+
+v1.1.0b		| 3/10/2016
+* Updated Elysian (ROBLOX Update)
+
+v1.1.0a		| 3/3/2016
+* Updated Elysian (ROBLOX Update)
+* init.lua is now executed before any other autoexec script 
+* Elysian now compiles with /MT (no more missing dll errors, hopefully)
+* Function 'printconsole' can now take three optional arguments for the color of the text: r, g, and b
++ Added FilteringEnabled check (see init.lua)
++ Added global 'ELYSIAN_INITIATED' (set to true when elysian is done initiating)
++ Added global 'ELYSIAN_VERSION'
+
+v1.0.1		| 2/29/2016
+* Updated Elysian (ROBLOX Update) (elysian fully functional)
+
+v1.0.0b		| 2/21/2016
+* Updated Elysian (ROBLOX Update) (BUGGY)
+
+v1.0.0a		| 2/11/2016
+* Updated Elysian (ROBLOX Update)
+
+v1.0.0		| 2/4/2016
+* Updated Elysian (ROBLOX Update)
++ Added function 'getfgwindowtitle'
++ Added function 'writefile'
++ Added function 'getelysianpath'
+(see thread for more details)
+
+v0.9.9 BETA	| 1/28/2016
+* Updated Elysian (ROBLOX Update)
+* New, improved, and secure auth/whitelist
+* Attempted to reduce crashes
++ Account changer now includes the IP of the requester in the email created when requesting a key
+
+v0.9.8a BETA	| 1/21/2016
+* Updated Elysian (ROBLOX Update)
+
+v0.9.8 BETA	| 1/19/2016
++ Added the following functions: mouse1press, mouse1release, mouse1click, mouse2press, mouse2release, mouse2click, keypress, keyrelease
+(see thread for more details)
+
+v0.9.7a BETA	| 1/15/2016
+* Updated Elysian (ROBLOX Update)
+
+v0.9.7 BETA	| 1/10/2016
+* Server updates
++ Added credits (View->Credits)
++ Gave Elysian->Exit functionality
+* UI components are disabled until auth succeeds
+
+v0.9.6a BETA	| 1/7/2016
+* Security improvements and optimizations
++ Added 'Parent scripts' checkbox to the UI (hover over for details; unchecked by default)
+
+v0.9.6 BETA	| 1/7/2016
+* Updated Elysian (ROBLOX Update)
+
+v0.9.5 BETA	| 1/3/2016
+* Security updates and improvements
+* Instead of getting a random error message whenever Elysian can't decrypt/read the response, a helpful message is displayed.
++ Added Clipboard library
++ Added function Clipboard::set (see thread for details)
+- Unblacklisted a place
+
+v0.9.1a BETA	| 12/24/2015
+* Localscripts are no longer given a random name (caused issues)
+
+v0.9.1 BETA	| 12/22/2015
+* Created localscripts are now given a random name
++ Blacklisted a place
+
+v0.9.0a BETA	| 12/17/2015
+* Attempt #1 at fixing whitelist bug.
+
+v0.9.0 BETA	| 12/13/2015-12/17/2015
++ Added line numbers to errors
++ Bypassed trust check for DataModel::HttpGet and DataModel::HttpPost
++ Added version check (elysian won't work if you don't have the latest version)
+* Updated security (patched whitelist bypass vuln)
+
+v0.8.2a BETA	| 12/11/2015
+* Updated Elysian (ROBLOX Update)
+
+v0.8.2 BETA	| 12/8/2015
+- Removed getobjects_impl.lua from the autoexec folder.
++ Added init.lua to the autoexec folder.
++ Added function 'loadfile' 
++ Added function 'readfile'
++ Added function 'getgenv'
+
+v0.8.1a-b BETA	| 12/8/2015
+* Attempt #1 at fixing loadstring/getobject issue.
+* Increased script textbox limit to 0x7FFFFFFE.
+
+v0.8.0 BETA	| 12/7/2015
++ Initial release.
+
+v0.0.0 PREALPHA	| ??/??/????
++ Elysian was born, like 4 months ago

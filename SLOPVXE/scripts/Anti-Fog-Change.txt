@@ -1,0 +1,7 @@
+a = game.Lighting.FogEnd
+while true do wait(0.1)
+b = game.Lighting.FogEnd
+if b ~= a then
+game.Lighting.FogEnd = a
+end
+end

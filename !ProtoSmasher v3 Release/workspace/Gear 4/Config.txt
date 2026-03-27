@@ -1,0 +1,42 @@
+Wait 3 Seconds Before Hopping:
+Auto Data Reset If You Don't Get KG:true
+Server Hop Instead Of Kick If A Mod Is Detected:true
+Infinite Chakra:false
+Use All Abilities:true
+Mod Detector:true
+Save Server Codes To Codes.txt:
+Claim Daily Quests:true
+Show Chakra:true
+Take All Mission Types:false
+Complete Missions:false
+Always Run:true
+Map Wide Kill Aura (Doesn't work if your not solo):false
+Server Hopper (Automatically Collects Items/Kills Bosses):
+Prestige Rank:
+Show Distance:false
+Complete Daily Quests:
+Kill Aura:true
+Infinite Mode (Doesn't Run If Infinite Chakra Is Enabled):false
+Anti Ragdoll:true
+Spin For Kekki Genkai:
+Always Private:true
+God Mode:true
+Kekki Genkai To Stop At:
+Kill Bosses:true
+Gui Enabled:true
+War Mode Farm:true
+Ignored Scrolls:
+High Refresh Rate:true
+TP to Akatsuki:
+Check If You Already Have The Item In Your Inventory:
+Item TP (Scrolls/Weapons/Ect) (Auto Pickup):true
+Show Health:true
+Redeem All Codes:true
+Post Private Server Code In #Snipes:
+Show Mode:false
+Hit Training Log:false
+Round To Reset At (22 Deafult):
+Reset Player Every 10 Minutes (Good for overnight farming):false
+Disable Auto Select Village (Server Hops Village Your In):
+Kekki Genkai Slot To Respin:KG-2
+Server Hop After Completing All Missions:

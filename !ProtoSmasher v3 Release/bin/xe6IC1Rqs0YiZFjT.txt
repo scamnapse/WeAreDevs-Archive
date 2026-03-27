@@ -1,0 +1,102 @@
+-- Decompiled with the Synapse X Luau decompiler.
+
+client = nil;
+service = nil;
+return function(p1)
+	local v1 = {
+		Name = "Explorer", 
+		Title = "Game Explorer", 
+		Size = { 400, 300 }, 
+		MinSize = { 150, 100 }, 
+		AllowMultiple = false
+	};
+	local u1 = nil;
+	local u2 = game;
+	function v1.OnRefresh()
+		u1(u2);
+	end;
+	local v2 = client.UI.Make("Window", v1);
+	local u3 = nil;
+	local u4 = game;
+	local u5 = nil;
+	local function u6(p2, p3, p4, p5)
+		local v3 = u3:Add("TextLabel", {
+			Text = "  " .. tostring(p3), 
+			ToolTip = p2.ClassName, 
+			TextXAlignment = "Left", 
+			Size = UDim2.new(1, 0, 0, 30), 
+			Position = UDim2.new(0, 0, 0, 30 * p4)
+		});
+		local v4 = {
+			Text = "Delete", 
+			Size = UDim2.new(0, 80, 0, 30), 
+			Position = UDim2.new(1, -160, 0, 0), 
+			Visible = not p5
+		};
+		function v4.OnClick()
+			u2 = u2.Parent or game;
+			client.Remote.Send("HandleExplore", p2, "Delete");
+			p2:Destroy();
+			u1(u2);
+		end;
+		local v5 = v3:Add("TextButton", v4);
+		local v6 = v3:Add("TextButton", {
+			Text = "Open", 
+			Size = UDim2.new(0, 80, 0, 30), 
+			Position = UDim2.new(1, -80, 0, 0), 
+			OnClick = function()
+				u4 = u2;
+				u2 = p2;
+				u1(p2);
+			end
+		});
+	end;
+	u1 = function(p6)
+		local l__Text__7 = u5.Text;
+		local v8 = 1;
+		u3:ClearAllChildren();
+		u6(p6.Parent or (u4 or game), "Previous Parent (Go Up..)", 0, true);
+		local l__next__9 = next;
+		local v10, v11 = p6:GetChildren();
+		while true do
+			local v12, v13 = l__next__9(v10, v11);
+			if not v12 then
+				break;
+			end;
+			v11 = v12;
+			local u7 = v8;
+			pcall(function()
+				if v13.Name:sub(1, #l__Text__7):lower() == l__Text__7:lower() or v13.ClassName:sub(1, #l__Text__7):lower() == l__Text__7:lower() then
+					u6(v13, v13.Name, u7);
+					u7 = u7 + 1;
+				end;
+			end);		
+		end;
+		u3:ResizeCanvas(false, true, false, false, 5, 5);
+	end;
+	if v2 then
+		u3 = v2:Add("ScrollingFrame", {
+			List = {}, 
+			ScrollBarThickness = 2, 
+			BackgroundTransparency = 1, 
+			Position = UDim2.new(0, 5, 0, 30), 
+			Size = UDim2.new(1, -10, 1, -30)
+		});
+		u5 = v2:Add("TextBox", {
+			Size = UDim2.new(1, -10, 0, 20), 
+			Position = UDim2.new(0, 5, 0, 5), 
+			BackgroundTransparency = 0.5, 
+			BorderSizePixel = 0, 
+			TextColor3 = Color3.new(1, 1, 1), 
+			Text = "", 
+			PlaceholderText = "Search", 
+			TextStrokeTransparency = 0.8
+		});
+		u5.FocusLost:connect(function(p7)
+			u1(u2, u5.Text);
+		end);
+		u1(game);
+		local l__gTable__14 = v2.gTable;
+		v2:Ready();
+	end;
+end;

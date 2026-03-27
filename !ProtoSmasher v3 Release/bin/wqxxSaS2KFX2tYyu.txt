@@ -1,0 +1,30 @@
+-- Decompiled with the Synapse X Luau decompiler.
+
+client = nil;
+cPcall = nil;
+Pcall = nil;
+Routine = nil;
+service = nil;
+gTable = nil;
+return function(p1)
+	local l__PlayerGui__1 = service.PlayerGui;
+	local l__LocalPlayer__2 = service.Players.LocalPlayer;
+	local l__Main__3 = client.UI.Prepare(script.Parent.Parent).Main;
+	local l__Title__4 = l__Main__3.Title;
+	local l__Message__5 = l__Main__3.Message;
+	local l__Color__6 = p1.Color;
+	local v7 = client.UI.Get("Output");
+	if v7 then
+		for v8, v9 in pairs(v7) do
+			local l__Object__10 = v9.Object;
+			if l__Object__10 and l__Object__10.Parent then
+				l__Object__10.Main.Position = UDim2.new(0, 0, 0.35, l__Object__10.Main.Position.Y.Offset + 50);
+			end;
+		end;
+	end;
+	l__Message__5.Text = p1.Message;
+	l__Message__5.Font = "Arial";
+	gTable.Ready();
+	wait(5);
+	gTable.Destroy();
+end;

@@ -1,0 +1,9 @@
+1. Open a roblox game
+2. open dll injector
+3. Click "select dll" and select AEX.dll
+4. Click "RobloxPlayerBeta.exe
+5. Click "Inject"
+6. profit
+
+
+Made by: Austin V2 On v3rm

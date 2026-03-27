@@ -1,0 +1,10 @@
+local player = game.Players.LocalPlayer
+if player.Character.Humanoid then
+player.Character.Humanoid.Name = "StackemBro"
+local clone = player.Character["StackemBro"]:Clone()
+clone.Parent = player.Character
+clone.Name = "Humanoid"
+wait(0.5)
+player.Character["StackemBro"]:Destroy()
+workspace.CurrentCamera.CameraSubject = player.Character.Humanoid
+end
